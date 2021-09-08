@@ -1,0 +1,3274 @@
+{
+  "title": "3. Your lifestyle",
+  "questions": [
+    {
+      "questionId": "q-3a089a25-db56-4490-91c6-1f326bf6e0fa",
+      "questionSourceId": "WP1",
+      "questionSourceCoding": "UKB",
+      "hint": "Include walking that you do at work, travelling to and from work, and for sport or leisure",
+      "help": "Count the number of days in a week that you walk for at least 10 minutes continuously at a time.",
+      "question": "In a typical WEEK, on how many days did you walk for at least 10 minutes at a time?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of days",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 7",
+              "min": 0,
+              "max": 7
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-2",
+          "answer": "Unable to walk"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-3b468e0c-e783-439d-b83d-a9ea4c92776d",
+      "questionSourceId": "WP1A",
+      "questionSourceCoding": "UKB",
+      "help": "Count the number of minutes that you usually spend walking in one day. [NEWPARAGRAPH]If the time you usually spend walking on each day of the week varies a lot, give an average of the time you spend walking. For instance, if on one day of the week you usually walk for 4 hours but on the other day you walk 2 hours then give the average - that is 3 hours.",
+      "question": "How many minutes did you usually spend walking on a typical DAY?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter minutes",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Minutes",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 1440",
+              "min": 0,
+              "max": 1440
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-4253f4fe-40bf-4462-9ccb-29c4bbc986d3",
+      "questionSourceId": "WP2",
+      "questionSourceCoding": "UKB",
+      "hint": "Do not include walking",
+      "help": "Count the number of days in a week that you do moderate physical activities for at least 10 minutes continuously at a time. [NEWPARAGRAPH]Remember to include activities that you do for work, leisure, travel and around the house.",
+      "question": "In a typical WEEK, on how many days did you do 10 minutes or more of moderate physical activities like carrying light loads, cycling at normal pace?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of days",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Days",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 7",
+              "min": 0,
+              "max": 7
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-f4935236-cf9d-4fd4-9817-4581171a041a",
+      "questionSourceId": "WP2A",
+      "questionSourceCoding": "UKB",
+      "help": "If the time you usually spend doing moderate physical activity on each day of the week varies a lot, give an average of the time you spend doing moderate physical activity.",
+      "question": "How many minutes did you usually spend doing moderate activities on a typical DAY?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter minutes",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Minutes",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 1440",
+              "min": 0,
+              "max": 1440
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-64406f2a-49ff-4a92-9486-d01e43886fa7",
+      "questionSourceId": "WP3",
+      "questionSourceCoding": "UKB",
+      "hint": "These are activities that make you sweat or breathe hard such as fast cycling, aerobics, heavy lifting",
+      "help": "Count the number of days in a week that you do vigorous physical activities for at least 10 minutes continuously at a time. [NEWPARAGRAPH]Remember to include activities that you do for work, leisure, travel and around the house. ",
+      "question": "In a typical WEEK, how many days did you do 10 minutes or more of vigorous physical activity?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of days",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 7",
+              "min": 0,
+              "max": 7
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-6a152c16-ede0-47fe-b487-76cd3e8d01bb",
+      "questionSourceId": "WP3A",
+      "questionSourceCoding": "UKB",
+      "help": "If the time you usually spend doing vigorous physical activity on each day of the week varies a lot, give an average of the time you spend doing vigorous physical activity.",
+      "question": "How many minutes did you usually spend doing vigorous activities on a typical DAY? ",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter minutes",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 1440",
+              "min": 0,
+              "max": 1440
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-d06d8ee9-38f4-4a39-8038-d2575411c19e",
+      "questionSourceId": "WP4",
+      "questionSourceCoding": "UKB",
+      "help": "Slow pace is defined as less than 3 miles per hour. Steady average pace is defined as between 3-4 miles per hour. Fast pace is defined as more than 4 miles per hour.",
+      "question": "How would you describe your usual walking pace? ",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Slow pace"
+        },
+        {
+          "value": "2",
+          "answer": "Steady average pace"
+        },
+        {
+          "value": "3",
+          "answer": "Brisk pace"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-e773f342-1a12-436b-b11e-5a2b98b4aafb",
+      "questionSourceId": "WP4A",
+      "questionSourceCoding": "UKB",
+      "hint": "Approx 10 steps",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "At home, during the last 4 weeks, about how many times a DAY do you climb a flight of stairs?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "0",
+          "answer": "None"
+        },
+        {
+          "value": "1",
+          "answer": "1-5 times a day"
+        },
+        {
+          "value": "2",
+          "answer": "6-10 times a day"
+        },
+        {
+          "value": "3",
+          "answer": "11-15 times a day"
+        },
+        {
+          "value": "4",
+          "answer": "16-20 times a day"
+        },
+        {
+          "value": "5",
+          "answer": "More than 20 times a day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-13d91a35-e4e5-480d-90cb-0d82b21e42c7",
+      "questionSourceId": "WP4AA",
+      "questionSourceCoding": "UKB",
+      "hint": "Not including any journeys to and from work; you can select more than one answer",
+      "help": "Remember not to include journeys to and from work.",
+      "question": "In the last 4 weeks, which forms of transport have you used most often to get about?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Car/motor vehicle"
+        },
+        {
+          "value": "2",
+          "answer": "Walk"
+        },
+        {
+          "value": "3",
+          "answer": "Public transport"
+        },
+        {
+          "value": "4",
+          "answer": "Cycle"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-91b61f01-3b0f-4486-93e2-41fee7b63df8",
+      "questionSourceId": "WP4B1",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "help": "Strenuous sports include sports that make you sweat or breathe hard. Heavy DIY includes chopping wood, home or car maintenance, lifting heavy objects or using heavy tools.",
+      "question": "In the last 4 weeks did you spend any time doing the following?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Walking for pleasure (not as a means of transport) "
+        },
+        {
+          "value": "2",
+          "answer": "Other exercises (eg: swimming, cycling, keep fit, bowling)"
+        },
+        {
+          "value": "3",
+          "answer": "Strenuous sports"
+        },
+        {
+          "value": "4",
+          "answer": "Light DIY (eg: pruning, watering the lawn)"
+        },
+        {
+          "value": "5",
+          "answer": "Heavy DIY (eg: weeding, lawn mowing, carpentry, digging)"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true,
+          "nextQuestionIdGoTo": "q-6ea16287-d6b1-4cb3-ba06-03fcb3191876"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true,
+          "nextQuestionIdGoTo": "q-6ea16287-d6b1-4cb3-ba06-03fcb3191876"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-b627223f-1b81-4615-93ad-683fde65cfac",
+      "questionSourceId": "WP4C1",
+      "questionSourceCoding": "UKB",
+      "question": "How many times in the last 4 weeks did you go walking for pleasure?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Once in the last 4 weeks"
+        },
+        {
+          "value": "2",
+          "answer": "2-3 times in the last 4 weeks"
+        },
+        {
+          "value": "3",
+          "answer": "Once a week"
+        },
+        {
+          "value": "4",
+          "answer": "2-3 times a week"
+        },
+        {
+          "value": "5",
+          "answer": "4-5 times a week"
+        },
+        {
+          "value": "6",
+          "answer": "Every day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-263d6824-bb62-41ee-a56f-9aef65d9e4d2",
+      "questionSourceId": "WP4E1",
+      "questionSourceCoding": "UKB",
+      "question": "Each time you went walking for pleasure, about how long did you spend doing it?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Less than 15 minutes"
+        },
+        {
+          "value": "2",
+          "answer": "Between 15 and 30 minutes"
+        },
+        {
+          "value": "3",
+          "answer": "Between 30 and 1 hour"
+        },
+        {
+          "value": "4",
+          "answer": "Between 1 hour and 1.5 hour"
+        },
+        {
+          "value": "5",
+          "answer": "Between 1.5 hour and 2 hours"
+        },
+        {
+          "value": "6",
+          "answer": "Between 2 and 3 hours"
+        },
+        {
+          "value": "7",
+          "answer": "Over 3 hours"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-d51ae5be-3f05-4b83-b6d3-9f975336b826",
+      "questionSourceId": "WP4C2",
+      "questionSourceCoding": "UKB",
+      "question": "How many times in the last 4 weeks did you do other exercises such as swimming, cycling, keep fit?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Once in the last 4 weeks"
+        },
+        {
+          "value": "2",
+          "answer": "2-3 times in the last 4 weeks"
+        },
+        {
+          "value": "3",
+          "answer": "Once a week"
+        },
+        {
+          "value": "4",
+          "answer": "2-3 times a week"
+        },
+        {
+          "value": "5",
+          "answer": "4-5 times a week"
+        },
+        {
+          "value": "6",
+          "answer": "Every day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-df6a7e30-ef31-45d8-9da8-dfb63821a028",
+      "questionSourceId": "WP4E2",
+      "questionSourceCoding": "UKB",
+      "question": "Each time you did other exercises such as swimming, cycling, keep fit, about how long did you spend doing them?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Less than 15 minutes"
+        },
+        {
+          "value": "2",
+          "answer": "Between 15 and 30 minutes"
+        },
+        {
+          "value": "3",
+          "answer": "Between 30 and 1 hour"
+        },
+        {
+          "value": "4",
+          "answer": "Between 1 hour and 1.5 hours"
+        },
+        {
+          "value": "5",
+          "answer": "Between 1.5 hours and 2 hours"
+        },
+        {
+          "value": "6",
+          "answer": "Between 2 and 3 hours"
+        },
+        {
+          "value": "7",
+          "answer": "Over 3 hours"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-e55069f0-6e98-47ea-a1ed-67115e7fa179",
+      "questionSourceId": "WP4C3",
+      "questionSourceCoding": "UKB",
+      "question": "How many times in the last 4 weeks did you do strenuous sports? ",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Once in the last 4 weeks"
+        },
+        {
+          "value": "2",
+          "answer": "2-3 times in the last 4 weeks"
+        },
+        {
+          "value": "3",
+          "answer": "Once a week"
+        },
+        {
+          "value": "4",
+          "answer": "2-3 times a week"
+        },
+        {
+          "value": "5",
+          "answer": "4-5 times a week"
+        },
+        {
+          "value": "6",
+          "answer": "Every day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-d5e77912-6124-4038-a908-24fa6d7e3130",
+      "questionSourceId": "WP4E3",
+      "questionSourceCoding": "UKB",
+      "question": "Each time you did strenuous sports, about how long did you spend doing it? ",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Less than 15 minutes"
+        },
+        {
+          "value": "2",
+          "answer": "Between 15 and 30 minutes"
+        },
+        {
+          "value": "3",
+          "answer": "Between 30 and 1 hour"
+        },
+        {
+          "value": "4",
+          "answer": "Between 1 hour and 1.5 hours"
+        },
+        {
+          "value": "5",
+          "answer": "Between 1.5 hours and 2 hours"
+        },
+        {
+          "value": "6",
+          "answer": "Between 2 and 3 hours"
+        },
+        {
+          "value": "7",
+          "answer": "Over 3 hours"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-03fa7ff9-588a-4d24-9f86-f79914002a5d",
+      "questionSourceId": "WP4C4",
+      "questionSourceCoding": "UKB",
+      "question": "How many times in the last 4 weeks did you do light DIY? ",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Once in the last 4 weeks"
+        },
+        {
+          "value": "2",
+          "answer": "2-3 times in the last 4 weeks"
+        },
+        {
+          "value": "3",
+          "answer": "Once a week"
+        },
+        {
+          "value": "4",
+          "answer": "2-3 times a week"
+        },
+        {
+          "value": "5",
+          "answer": "4-5 times a week"
+        },
+        {
+          "value": "6",
+          "answer": "Every day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-04a3500f-9714-411a-958e-e066b8aa57b9",
+      "questionSourceId": "WP4E4",
+      "questionSourceCoding": "UKB",
+      "question": "Each time you did light DIY, about how long did you spend doing it? ",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Less than 15 minutes"
+        },
+        {
+          "value": "2",
+          "answer": "Between 15 and 30 minutes"
+        },
+        {
+          "value": "3",
+          "answer": "Between 30 and 1 hour"
+        },
+        {
+          "value": "4",
+          "answer": "Between 1 hour and 1.5 hours"
+        },
+        {
+          "value": "5",
+          "answer": "Between 1.5 hours and 2 hours"
+        },
+        {
+          "value": "6",
+          "answer": "Between 2 and 3 hours"
+        },
+        {
+          "value": "7",
+          "answer": "Over 3 hours"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-ce199feb-5539-4368-812c-a491b4c796d5",
+      "questionSourceId": "WP4C5",
+      "questionSourceCoding": "UKB",
+      "question": "How many times in the last 4 weeks did you do heavy DIY? ",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Once in the last 4 weeks"
+        },
+        {
+          "value": "2",
+          "answer": "2-3 times in the last 4 weeks"
+        },
+        {
+          "value": "3",
+          "answer": "Once a week"
+        },
+        {
+          "value": "4",
+          "answer": "2-3 times a week"
+        },
+        {
+          "value": "5",
+          "answer": "4-5 times a week"
+        },
+        {
+          "value": "6",
+          "answer": "Every day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-aabe125a-133e-41ee-bca4-1819f2721634",
+      "questionSourceId": "WP4E5",
+      "questionSourceCoding": "UKB",
+      "question": "Each time you did heavy DIY, about how long did you spend doing it? ",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Less than 15 minutes"
+        },
+        {
+          "value": "2",
+          "answer": "Between 15 and 30 minutes"
+        },
+        {
+          "value": "3",
+          "answer": "Between 30 and 1 hour"
+        },
+        {
+          "value": "4",
+          "answer": "Between 1 hour and 1.5 hours"
+        },
+        {
+          "value": "5",
+          "answer": "Between 1.5 hours and 2 hours"
+        },
+        {
+          "value": "6",
+          "answer": "Between 2 and 3 hours"
+        },
+        {
+          "value": "7",
+          "answer": "Over 3 hours"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-6ea16287-d6b1-4cb3-ba06-03fcb3191876",
+      "questionSourceId": "WP11",
+      "questionSourceCoding": "UKB",
+      "help": "If this varies, please give an average of how often you visit or have had visits in the last year. Include meeting with friends or family in environments outside of the home such as in the park, at a sports field, at a restaurant or pub.",
+      "question": "How often do you visit friends or family or have them visit you?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Almost daily"
+        },
+        {
+          "value": "2",
+          "answer": "2-4 times a week"
+        },
+        {
+          "value": "3",
+          "answer": "About once a week"
+        },
+        {
+          "value": "4",
+          "answer": "About once a month"
+        },
+        {
+          "value": "5",
+          "answer": "Once every few month"
+        },
+        {
+          "value": "6",
+          "answer": "Never or almost never"
+        },
+        {
+          "value": "7",
+          "answer": "No friends/family outside household"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-e7c05fa0-3c1b-4bdb-ae97-3346a1449666",
+      "questionSourceId": "WP12",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one",
+      "help": "If this varies, please think about activities in the last year.",
+      "question": "Which of the following do you attend once a week or more often?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Sports club or gym"
+        },
+        {
+          "value": "2",
+          "answer": "Pub or social club"
+        },
+        {
+          "value": "3",
+          "answer": "Religious group"
+        },
+        {
+          "value": "4",
+          "answer": "Adult education class"
+        },
+        {
+          "value": "5",
+          "answer": "Other group activity"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-3c671610-909c-4f00-8083-e8c5ba290446",
+      "questionSourceId": "WP12A",
+      "questionSourceCoding": "UKB",
+      "help": "If the time you spend outdoors in summer varies a lot, give the average time per day. [NEWPARAGRAPH]For example, if you spend 1 hour a day on each weekday and 4 hours a day on the weekend, the total hours in a week are 13 (5 + 8), so you spend approximately 2 hours a day. ",
+      "question": "In a typical DAY in summer, how many hours do you spend outdoors?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of hours",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 24",
+              "min": 0,
+              "max": 24
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less than an hour a day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-98444abe-d8ca-4145-b28c-eadf7618e28c",
+      "questionSourceId": "WP12B",
+      "questionSourceCoding": "UKB",
+      "help": "If the time you spend outdoors in winter varies a lot, give the average time per day. [NEWPARAGRAPH]For example, if you spend 1 hour a day on each weekday and 4 hours a day on the weekend, the total hours in a week are 13 (5 + 8), so you spend approximately 2 hours a day. ",
+      "question": "In a typical DAY in winter, how many hours do you spend outdoors?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of hours",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 24",
+              "min": 0,
+              "max": 24
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less than an hour a day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-0e2e49b8-1485-4a43-a831-ebe0eac5d8cf",
+      "questionSourceId": "WP5",
+      "questionSourceCoding": "UKB",
+      "hint": "Put 0 if you do not spend any time doing it",
+      "help": "If the time you spend watching TV varies a lot, give the average time for a 24 hour day in the last 4 weeks.",
+      "question": "In a typical DAY, how many hours do you spend watching TV?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of hours",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 24",
+              "min": 0,
+              "max": 24
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less than an hour a day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-35297d75-f0c3-47d2-a1ea-8ffcdba0ecca",
+      "questionSourceId": "WP5A",
+      "questionSourceCoding": "UKB",
+      "hint": "Do not include using a computer at work; put 0 if you do not spend any time doing it",
+      "help": "If the time you spend on the computer varies a lot, give the average time for a 24 hour day in the last 4 weeks. Remember not to include time spent on a computer at work.",
+      "question": "In a typical DAY, how many hours do you spend using the computer?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of hours",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 24",
+              "min": 0,
+              "max": 24
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less than an hour a day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-737863ad-c4b7-4460-93ee-90fec02e6a07",
+      "questionSourceId": "WP7",
+      "questionSourceCoding": "UKB",
+      "help": "If the time you spend driving varies a lot, give the average time for a 24-hour day in the last 4 weeks. [NEWPARAGRAPH]Include driving a car, bus, motorcycle, boat, truck etc. [NEWPARAGRAPH]Include all the driving that you do as part of work, getting to work or outside of work. If you do not drive, please enter 0. ",
+      "question": "In a typical DAY, how many hours do you spend driving?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of hours",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 24",
+              "min": 0,
+              "max": 24
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less than an hour a day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-92fcc4ab-a46a-4c96-bb3a-7cca2cf3aee8",
+      "questionSourceId": "SL1",
+      "questionSourceCoding": "UKB",
+      "hint": "Please include naps",
+      "help": "If the time you spend sleeping varies a lot, give the average time for a 24 hour day in the last 4 weeks.",
+      "question": "About how many hours sleep do you get in every 24 hours?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of hours",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 1 and 23",
+              "min": 1,
+              "max": 23
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-9e6c63f4-9a93-4bd9-a476-f816c1b1683d",
+      "questionSourceId": "SL1AA",
+      "questionSourceCoding": "UKB",
+      "help": "If this varies a lot, answer this question in relation to the last 4 weeks.",
+      "question": "On an average day, how easy do you find getting up in the morning?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Not easy at all"
+        },
+        {
+          "value": "2",
+          "answer": "Not very easy"
+        },
+        {
+          "value": "3",
+          "answer": "Fairly easy"
+        },
+        {
+          "value": "4",
+          "answer": "Very easy"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-630140a3-c45b-46c2-9654-3b744bda18e5",
+      "questionSourceId": "SL1AB",
+      "questionSourceCoding": "UKB",
+      "help": "If this varies a lot, answer this question in relation to the last 4 weeks.",
+      "question": "Do you consider yourself to be?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Definitely a 'morning' person"
+        },
+        {
+          "value": "2",
+          "answer": "More a 'morning' than 'evening' person"
+        },
+        {
+          "value": "3",
+          "answer": "More an 'evening' than a 'morning' person"
+        },
+        {
+          "value": "4",
+          "answer": "Definitely an 'evening' person"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-431dbc46-89e1-4091-bef2-18cbdb544aca",
+      "questionSourceId": "SL1A",
+      "questionSourceCoding": "UKB",
+      "help": "If this varies a lot, answer this question in relation to the last 4 weeks.",
+      "question": "Do you have a nap during the day?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Never/rarely"
+        },
+        {
+          "value": "2",
+          "answer": "Sometimes"
+        },
+        {
+          "value": "3",
+          "answer": "Usually"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-e2a1982e-9d18-43c0-9c7f-05cda3f30c1e",
+      "questionSourceId": "SL2",
+      "questionSourceCoding": "UKB",
+      "help": "If this varies a lot, answer this question in relation to the last 4 weeks.",
+      "question": "Do you have trouble falling asleep at night or do you wake up in the middle of the night?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Never/rarely"
+        },
+        {
+          "value": "2",
+          "answer": "Sometimes"
+        },
+        {
+          "value": "3",
+          "answer": "Usually"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-62a7dc80-540b-4e1e-89da-bf2c7fb3aec8",
+      "questionSourceId": "SL3",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "Does your partner or a close relative or friend complain about your snoring?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "2",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-eb66ce18-af2e-4088-8511-66a4df8cb920",
+      "questionSourceId": "SL4",
+      "questionSourceCoding": "UKB",
+      "hint": "E.g. when working, reading or driving",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "How likely are you to doze off or fall asleep during the daytime when you don't mean to?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "0",
+          "answer": "Never/rarely"
+        },
+        {
+          "value": "1",
+          "answer": "Sometimes"
+        },
+        {
+          "value": "2",
+          "answer": "Often"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-6283cdbe-2b91-441b-bdb7-e0ed5bd26829",
+      "questionSourceId": "S1",
+      "questionSourceCoding": "UKB",
+      "question": "Do you smoke tobacco now?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes, on most or all days",
+          "nextQuestionIdGoTo": "q-ea8bdbcd-387d-4740-90b5-c083ab562aee"
+        },
+        {
+          "value": "2",
+          "answer": "Only occasionally"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-2c4cce20-b379-474c-8dd4-499bda58b7c7"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-a4e3fbbe-bdbd-463f-947e-ea82a97746cd",
+      "questionSourceId": "S2",
+      "questionSourceCoding": "UKB",
+      "question": "In the past, how often have you smoked tobacco?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Smoked on most or all days",
+          "nextQuestionIdGoTo": "q-0b3f120e-e836-458f-a8a4-dd0386aa3ae8"
+        },
+        {
+          "value": "2",
+          "answer": "Smoked occasionally"
+        },
+        {
+          "value": "3",
+          "answer": "Just tried once or twice"
+        },
+        {
+          "value": "4",
+          "answer": "I have never smoked",
+          "nextQuestionIdGoTo": "q-70633f01-8d05-4d50-8fe3-eaf92ae8b49c"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-70633f01-8d05-4d50-8fe3-eaf92ae8b49c"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-f8fe00b1-30de-4958-b429-9a9a818c7e66",
+      "questionSourceId": "S2A",
+      "questionSourceCoding": "UKB",
+      "question": "In your lifetime, have you smoked a total of at least 100 times?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes",
+          "nextQuestionIdGoTo": "q-70633f01-8d05-4d50-8fe3-eaf92ae8b49c"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-70633f01-8d05-4d50-8fe3-eaf92ae8b49c"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "nextQuestionIdGoTo": "q-70633f01-8d05-4d50-8fe3-eaf92ae8b49c"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-70633f01-8d05-4d50-8fe3-eaf92ae8b49c"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-ea8bdbcd-387d-4740-90b5-c083ab562aee",
+      "questionSourceId": "S3",
+      "questionSourceCoding": "UKB",
+      "question": "How old were you when you first started smoking on most days?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 5,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 5 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-0de279a4-c54f-455f-9ca7-3959aa50a521",
+      "questionSourceId": "S4",
+      "questionSourceCoding": "UKB",
+      "help": "If you smoke cigarettes and cigars and pipes, please select the type of cigarette you smoke. [NEWPARAGRAPH]If you smoke both hand rolled and manufactured cigarettes select the one that you smoke more of. ",
+      "question": "What type of tobacco do you mainly smoke?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Manufactured cigarettes",
+          "nextQuestionIdGoTo": "q-a16add0e-1a7d-4299-93ec-62a9abc2e5fe"
+        },
+        {
+          "value": "2",
+          "answer": "Hand-rolled cigarettes",
+          "nextQuestionIdGoTo": "q-a16add0e-1a7d-4299-93ec-62a9abc2e5fe"
+        },
+        {
+          "value": "3",
+          "answer": "Cigars or pipes",
+          "nextQuestionIdGoTo": "q-34e3211d-156a-43ef-820f-9c28a77d50df"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-34e3211d-156a-43ef-820f-9c28a77d50df",
+      "questionSourceId": "S4AA",
+      "questionSourceCoding": "UKB",
+      "question": "Did you previously smoke cigarettes on most or all days?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-256bbd2a-2e73-4028-ac61-f36be8b83973",
+      "questionSourceId": "S4AB",
+      "questionSourceCoding": "UKB",
+      "question": "About how many cigarettes did you smoke on average each day?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter count",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 1 and 150",
+              "min": 1,
+              "max": 150
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less then one a day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-5ae6020e-d7fb-4bec-8a61-7734a51a27be",
+      "questionSourceId": "S4AC",
+      "questionSourceCoding": "UKB",
+      "question": "How old were you when you last smoked cigarettes on most days?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter minutes",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "min": 5,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 5 and your age"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-a16add0e-1a7d-4299-93ec-62a9abc2e5fe",
+      "questionSourceId": "S4A",
+      "questionSourceCoding": "UKB",
+      "help": "Count the total number of cigarettes (including both hand-rolled and manufactured cigarettes if both are smoked) [NEWPARAGRAPH]For hand-rolled cigarettes: [NEWPARAGRAPH]- One ounce of tobacco makes about 30 cigarettes. [NEWPARAGRAPH]- One gram of tobacco makes about 1 cigarette. ",
+      "question": "About how many cigarettes do you smoke on average each day?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter count",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 1 and 150",
+              "min": 1,
+              "max": 150
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less then one a day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-842ee90e-e941-4471-892b-40041e1192fe",
+      "questionSourceId": "S5A",
+      "questionSourceCoding": "UKB",
+      "question": "Compared to 10 years ago do you smoke...",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "More nowadays?"
+        },
+        {
+          "value": "2",
+          "answer": "About the same?"
+        },
+        {
+          "value": "3",
+          "answer": "Less nowadays?"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-7e76ba3c-c20c-43d3-91fd-e7849a4feab2",
+      "questionSourceId": "S5B",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "question": "Why did you reduce your smoking?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Illness or ill health"
+        },
+        {
+          "value": "2",
+          "answer": "Doctor's advice"
+        },
+        {
+          "value": "3",
+          "answer": "Health precaution"
+        },
+        {
+          "value": "4",
+          "answer": "Financial reasons"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-0b3f120e-e836-458f-a8a4-dd0386aa3ae8",
+      "questionSourceId": "S6",
+      "questionSourceCoding": "UKB",
+      "question": "How old were you when you first started smoking on most days?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "min": 5,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 5 and your age"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-a2591c0a-5669-41d3-8778-1e1531c5d4cd",
+      "questionSourceId": "S7",
+      "questionSourceCoding": "UKB",
+      "question": "What type of tobacco did you usually smoke?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Manufactured cigarettes"
+        },
+        {
+          "value": "2",
+          "answer": "Hand-rolled cigarettes"
+        },
+        {
+          "value": "3",
+          "answer": "Cigars or pipes"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-b86a1525-baef-43fe-98b9-a61a35d157d2",
+      "questionSourceId": "S7A",
+      "questionSourceCoding": "UKB",
+      "help": "Count the total number of cigarettes (including both hand-rolled and manufactured cigarettes if both are smoked) [NEWPARAGRAPH]For hand-rolled cigarettes: [NEWPARAGRAPH]- One ounce of tobacco makes about 30 cigarettes. [NEWPARAGRAPH]- One gram of tobacco makes about 1 cigarette. ",
+      "question": "About how many cigarettes did you smoke on average each day?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter count",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 1 and 150",
+              "min": 1,
+              "max": 150
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less then one a day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-7169a92c-6ccc-4fc8-82c2-fd80dc971e16",
+      "questionSourceId": "S8",
+      "questionSourceCoding": "UKB",
+      "question": "How old were you when you last smoked on most days?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "min": 5,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 5 and your age"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-a5141881-f52d-49d3-bf21-5c31e10378b4",
+      "questionSourceId": "S9",
+      "questionSourceCoding": "UKB",
+      "question": "In the time that you smoked, did you ever stop for more than 6 months?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-e5cf4101-78e0-4261-90aa-107e466974ac",
+      "questionSourceId": "S10",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "question": "Why did you stop smoking?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Illness or ill health"
+        },
+        {
+          "value": "2",
+          "answer": "Doctor's advice"
+        },
+        {
+          "value": "3",
+          "answer": "Health precaution"
+        },
+        {
+          "value": "4",
+          "answer": "Financial reasons"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-70633f01-8d05-4d50-8fe3-eaf92ae8b49c",
+      "questionSourceId": "S11",
+      "questionSourceCoding": "UKB",
+      "question": "Does anyone in your household smoke?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes, one household member smokes"
+        },
+        {
+          "value": "2",
+          "answer": "Yes, more than one household member smokes"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-77467ddc-5770-4e84-ac4c-8ac086a5ba6b"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-b83e6974-6df2-4dd5-804e-e5187757e856",
+      "questionSourceId": "S12",
+      "questionSourceCoding": "UKB",
+      "help": "Please give the number of hours in a typical week over the last year that you have been exposed to other people's tobacco smoke in the home environment.",
+      "question": "At home, about how many hours per WEEK are you exposed to other people's tobacco smoke?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of hours",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 168",
+              "min": 0,
+              "max": 168
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-77467ddc-5770-4e84-ac4c-8ac086a5ba6b",
+      "questionSourceId": "S13",
+      "questionSourceCoding": "UKB",
+      "help": "Please give the number of hours in a typical week over the last year that you have been exposed to other people's tobacco smoke in environments other than the home (include work, pubs, restaurants etc).",
+      "question": "Outside of your home, about how many hours per WEEK are you exposed to other people's tobacco smoke?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of hours",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 168",
+              "min": 0,
+              "max": 168
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-2c4cce20-b379-474c-8dd4-499bda58b7c7",
+      "questionSourceId": "V1",
+      "questionSourceCoding": "NHS3",
+      "hint": "E-cigarette, also known as vaping",
+      "question": "Have you ever used an electronic cigarette?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes",
+          "nextQuestionIdGoTo": "q-011f64fa-f58f-4754-94d3-d43033f4a8cb"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-366ca9ed-6689-4e0d-a133-7299b7d42eef"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-011f64fa-f58f-4754-94d3-d43033f4a8cb"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-011f64fa-f58f-4754-94d3-d43033f4a8cb",
+      "questionSourceId": "V2",
+      "questionSourceCoding": "NHS3",
+      "question": "How old were you when you first used an e-cigarette (vaping)?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 5,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 5 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-87dc216c-a03e-44a0-9e5c-cf03eb4d9ba1",
+      "questionSourceId": "V3",
+      "questionSourceCoding": "NHS3",
+      "question": "When you used your first e-cigarette (vaping)?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "I had never smoked tobacco cigarettes"
+        },
+        {
+          "value": "2",
+          "answer": "I was current smoker of tobacco cigarettes and had no plans to quit"
+        },
+        {
+          "value": "3",
+          "answer": "I was current smoker of tobacco cigarettes and was planning to quit"
+        },
+        {
+          "value": "4",
+          "answer": "I was a current smoker of tobacco cigarettes and was planning to reduce smoking"
+        },
+        {
+          "value": "5",
+          "answer": "I had stopped smoking tobacco cigarettes"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        }
+      ]
+    },
+    {
+      "questionId": "q-cee89866-4986-482b-adea-b7e95f9df1f9",
+      "questionSourceId": "V4",
+      "questionSourceCoding": "NHS3",
+      "question": "How often, on average, did you use e-cigarettes (vaping) during the past 12 months?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Never"
+        },
+        {
+          "value": "2",
+          "answer": "Less than 1 time/mo"
+        },
+        {
+          "value": "3",
+          "answer": "2-3 times/mo"
+        },
+        {
+          "value": "4",
+          "answer": "1-2 times/week"
+        },
+        {
+          "value": "5",
+          "answer": "3-6 times/week"
+        },
+        {
+          "value": "6",
+          "answer": "1-4 times/day"
+        },
+        {
+          "value": "7",
+          "answer": "5-14 times/day"
+        },
+        {
+          "value": "8",
+          "answer": "15-24 times/day"
+        },
+        {
+          "value": "9",
+          "answer": "25-34 times/day"
+        },
+        {
+          "value": "10",
+          "answer": "35-44 times/day"
+        },
+        {
+          "value": "11",
+          "answer": "More than 45 times/day"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-b71f9a0d-dcc9-4f87-80fd-8a314e11863c",
+      "questionSourceId": "V5",
+      "questionSourceCoding": "NHS3",
+      "question": "What type of e-liquids/cartridges do you or did you use in your e-cigarettes?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Fruit/dessert flavor WITHOUT nicotine"
+        },
+        {
+          "value": "2",
+          "answer": "Fruit/dessert flavor WITH nicotine"
+        },
+        {
+          "value": "3",
+          "answer": "Menthol flavor WITHOUT nicotine"
+        },
+        {
+          "value": "4",
+          "answer": "Menthol flavor WITH nicotine"
+        },
+        {
+          "value": "5",
+          "answer": "Tobacco flavor WITHOUT nicotine"
+        },
+        {
+          "value": "6",
+          "answer": "Tobacco flavor WITH nicotine"
+        },
+        {
+          "value": "7",
+          "answer": "Marijuana or THC concentrate"
+        },
+        {
+          "value": "8",
+          "answer": "Alcohol"
+        },
+        {
+          "value": "9",
+          "answer": "Other"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-366ca9ed-6689-4e0d-a133-7299b7d42eef",
+      "questionSourceId": "A1",
+      "questionSourceCoding": "UKB",
+      "help": "If this varies a lot, please provide an average considering your intake over the last year",
+      "question": "About how often do you drink alcohol?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Daily or almost daily",
+          "nextQuestionIdGoTo": "q-70d195d1-cd53-47a7-af70-4c81dfecf32e"
+        },
+        {
+          "value": "2",
+          "answer": "Three or four times a week",
+          "nextQuestionIdGoTo": "q-70d195d1-cd53-47a7-af70-4c81dfecf32e"
+        },
+        {
+          "value": "3",
+          "answer": "Once or twice a week",
+          "nextQuestionIdGoTo": "q-70d195d1-cd53-47a7-af70-4c81dfecf32e"
+        },
+        {
+          "value": "4",
+          "answer": "One to three times a month",
+          "nextQuestionIdGoTo": "q-abb22e4b-f234-4ba9-b46f-6cde13de2e8d"
+        },
+        {
+          "value": "5",
+          "answer": "Special occasions only",
+          "nextQuestionIdGoTo": "q-abb22e4b-f234-4ba9-b46f-6cde13de2e8d"
+        },
+        {
+          "value": "6",
+          "answer": "Never",
+          "nextQuestionIdGoTo": "q-1422a9d7-ff67-4a14-a311-5c082b06fa39"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "END"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-1422a9d7-ff67-4a14-a311-5c082b06fa39",
+      "questionSourceId": "A1A",
+      "questionSourceCoding": "UKB",
+      "question": "Did you previously drink alcohol?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes",
+          "nextQuestionIdGoTo": "q-06797e12-5d0c-4e9f-83d3-530837c33301"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "END"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "END"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-abb22e4b-f234-4ba9-b46f-6cde13de2e8d",
+      "questionSourceId": "A2B",
+      "questionSourceCoding": "UKB",
+      "hint": "There are six glasses in an average bottle",
+      "help": "Please include sparkling red wine here.",
+      "question": "In an average MONTH, how many glasses of RED wine would you drink?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of glasses",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 250",
+              "min": 0,
+              "max": 250
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-cc75161f-10c9-4524-8461-df2b68de879a",
+      "questionSourceId": "A2C",
+      "questionSourceCoding": "UKB",
+      "hint": "There are six glasses in an average bottle",
+      "help": "Please include sparkling white wine here.",
+      "question": "In an average MONTH, how many glasses of WHITE wine or champagne would you drink?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of glasses",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 250",
+              "min": 0,
+              "max": 250
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-bb5e6c3a-640e-46cc-8ce0-edf0f223a5f6",
+      "questionSourceId": "A2E",
+      "questionSourceCoding": "UKB",
+      "hint": "Include bitter, lager, stout, ale, Guinness",
+      "question": "In an average MONTH, how many pints of beer or cider would you drink?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of pints",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 250",
+              "min": 0,
+              "max": 250
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-4311a76c-32a9-4d84-b5e2-7db498edda78",
+      "questionSourceId": "A2A",
+      "questionSourceCoding": "UKB",
+      "hint": "There are 25 standard measures in a normal sized bottle; spirits include drinks such as whisky, gin, rum, vodka, brandy",
+      "question": "In an average MONTH, how many measures of spirits or liqueurs would you drink?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of measures",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 250",
+              "min": 0,
+              "max": 250
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-ea0661f6-7d19-4f2c-9b00-767cc96da459",
+      "questionSourceId": "A2F",
+      "questionSourceCoding": "UKB",
+      "hint": "There are 12 glasses in an average bottle. Fortified wines include drinks such as sherry, port, vermouth",
+      "help": "Fortified wines include: Sherry, Port, Vermouth, Muscat, Madeira, Malaga, Tokay, Frontignan, Frontignac.",
+      "question": "In an average MONTH, how many glasses of fortified wine would you drink?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of glasses",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 250",
+              "min": 0,
+              "max": 250
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-ac8aa794-0816-423f-937c-237824ecef2d",
+      "questionSourceId": "A2G",
+      "questionSourceCoding": "UKB",
+      "question": "In an average MONTH, how many glasses of other alcoholic drinks (such as alcopops) would you drink?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of glasses",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 250",
+              "min": 0,
+              "max": 250
+            }
+          ],
+          "nextQuestionIdGoTo":"q-923dfb37-0e53-4bbe-8709-f27280bbda22"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "nextQuestionIdGoTo":"q-923dfb37-0e53-4bbe-8709-f27280bbda22"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo":"q-923dfb37-0e53-4bbe-8709-f27280bbda22"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-70d195d1-cd53-47a7-af70-4c81dfecf32e",
+      "questionSourceId": "A3B",
+      "questionSourceCoding": "UKB",
+      "hint": "There are six glasses in an average bottle",
+      "help": "Please include sparkling red wine here.",
+      "question": "In an average WEEK, how many glasses of RED wine would you drink?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of glasses",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 250",
+              "min": 0,
+              "max": 250
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-faeb543f-8353-43b9-953d-595a26f1b4ad",
+      "questionSourceId": "A3C",
+      "questionSourceCoding": "UKB",
+      "hint": "There are six glasses in an average bottle",
+      "help": "Please include sparkling white wine here.",
+      "question": "In an average WEEK, how many glasses of WHITE wine or champagne would you drink?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of glasses",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 250",
+              "min": 0,
+              "max": 250
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-eea150e2-a002-4aa7-b239-1183eab94070",
+      "questionSourceId": "A3E",
+      "questionSourceCoding": "UKB",
+      "hint": "Include bitter, lager, stout, ale, Guinness",
+      "question": "In an average WEEK, how many pints of beer or cider would you drink?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of pints",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 250",
+              "min": 0,
+              "max": 250
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-8bfd8fcd-9e3a-4231-a3a0-8ff2a65ca1a9",
+      "questionSourceId": "A3A",
+      "questionSourceCoding": "UKB",
+      "hint": "there are 25 standard measures in a normal sized bottle; spirits include drinks such as whisky, gin, rum, vodka, brandy.",
+      "help": "For mixed drinks that contain spirits or liqueurs, count one bottle as one measure. There is a question later on alcopops",
+      "question": "In an average WEEK, how many measures of spirits or liqueurs would you drink?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of measures",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 250",
+              "min": 0,
+              "max": 250
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-c164bc7b-4f79-4cff-9868-55a59cba2266",
+      "questionSourceId": "A3F",
+      "questionSourceCoding": "UKB",
+      "hint": "There are 12 glasses in an average bottle. Fortified wines include drinks such as sherry, port, vermouth",
+      "help": "Fortified wines include: Sherry, Port, Vermouth, Muscat,Madeira, Malaga, Tokay, Frontignan, Frontignac.",
+      "question": "In an average WEEK, how many glasses of fortified wine would you drink?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of glasses",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 250",
+              "min": 0,
+              "max": 250
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-f65700f6-8adb-44fe-a872-7952dedf420a",
+      "questionSourceId": "A3G",
+      "questionSourceCoding": "UKB",
+      "question": "In an average WEEK, how many glasses of other alcoholic drinks (such as alcopops) would you drink?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of glasses",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 250",
+              "min": 0,
+              "max": 250
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-923dfb37-0e53-4bbe-8709-f27280bbda22",
+      "questionSourceId": "A5",
+      "questionSourceCoding": "UKB",
+      "question": "When you drink alcohol is it usually with meals?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-6",
+          "answer": "It varies"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-b3e99450-437d-429c-bb2c-6d06823cda08",
+      "questionSourceId": "A6",
+      "questionSourceCoding": "UKB",
+      "question": "Compared to 10 years ago, do you drink?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "More nowadays",
+          "nextQuestionIdGoTo": "END"
+        },
+        {
+          "value": "2",
+          "answer": "About the same",
+          "nextQuestionIdGoTo": "END"
+        },
+        {
+          "value": "3",
+          "answer": "Less nowadays",
+          "nextQuestionIdGoTo": "q-1406829e-86fe-42c3-bf4b-cadf2fb89e71"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "nextQuestionIdGoTo": "END"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "END"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-1406829e-86fe-42c3-bf4b-cadf2fb89e71",
+      "questionSourceId": "A7",
+      "questionSourceCoding": "UKB",
+      "question": "Why did you reduce the amount you drank?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Illness or ill health",
+          "nextQuestionIdGoTo": "END"
+        },
+        {
+          "value": "2",
+          "answer": "Doctor's advice",
+          "nextQuestionIdGoTo": "END"
+        },
+        {
+          "value": "3",
+          "answer": "Health precaution",
+          "nextQuestionIdGoTo": "END"
+        },
+        {
+          "value": "4",
+          "answer": "Financial reasons",
+          "nextQuestionIdGoTo": "END"
+        },
+        {
+          "value": "5",
+          "answer": "Other reason",
+          "nextQuestionIdGoTo": "END"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "nextQuestionIdGoTo": "END"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "END"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-06797e12-5d0c-4e9f-83d3-530837c33301",
+      "questionSourceId": "A7A",
+      "questionSourceCoding": "UKB",
+      "question": "Why did you stop drinking alcohol?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Illness or ill health"
+        },
+        {
+          "value": "2",
+          "answer": "Doctor's advice"
+        },
+        {
+          "value": "3",
+          "answer": "Health precaution"
+        },
+        {
+          "value": "4",
+          "answer": "Financial reasons"
+        },
+        {
+          "value": "5",
+          "answer": "Other reason"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    }
+  ]
+}

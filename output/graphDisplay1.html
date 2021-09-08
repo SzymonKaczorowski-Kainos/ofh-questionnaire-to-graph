@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        body {
+            font-family: sans-serif;
+            color: #444;
+        }
+        
+        .clusters rect {
+            fill: #00ffd0;
+            stroke: #999;
+            stroke-width: 1.5px;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf;
+            font-size: 14px;
+        }
+
+        .node rect {
+            stroke: #999;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Questionnaire Template graph generator</h1>
+    <svg id="svg-canvas"></svg>
+  </body>
+    <script>
+      const graphString = `{"options":{"directed":true,"multigraph":false,"compound":false},"nodes":[{"v":"END","value":{"label":"END"}},{"v":"q-33274eb3-0e5c-4101-b2ff-723025d4bb4e","value":{"label":"<p style='width=100%; text-align: center'>q-33274eb3-0e5c-4101-b2ff-723025d4bb4e</p><p style='width=100%; text-align: center'>What sex was assigned to you at birth?</p>","labelType":"html"}},{"v":"q-f9762470-c5d2-4d5c-aee5-72d9ef7099ea","value":{"label":"<p style='width=100%; text-align: center'>q-f9762470-c5d2-4d5c-aee5-72d9ef7099ea</p><p style='width=100%; text-align: center'>To which gender identify do you most identify?</p>","labelType":"html"}},{"v":"q-d9d112f4-577a-4acc-a9cc-62e6fb507516","value":{"label":"<p style='width=100%; text-align: center'>q-d9d112f4-577a-4acc-a9cc-62e6fb507516</p><p style='width=100%; text-align: center'>How would you prefer to enter your height and weight?</p>","labelType":"html"}},{"v":"q-7cb272fa-ebd3-4b51-b700-9fa791934008","value":{"label":"<p style='width=100%; text-align: center'>q-7cb272fa-ebd3-4b51-b700-9fa791934008</p><p style='width=100%; text-align: center'>What is your height?</p>","labelType":"html"}},{"v":"q-337d0852-2674-4432-a2d6-109939b54e26","value":{"label":"<p style='width=100%; text-align: center'>q-337d0852-2674-4432-a2d6-109939b54e26</p><p style='width=100%; text-align: center'>What is your weight?</p>","labelType":"html"}},{"v":"q-623ececf-ab0d-4d93-8b8a-463671926292","value":{"label":"<p style='width=100%; text-align: center'>q-623ececf-ab0d-4d93-8b8a-463671926292</p><p style='width=100%; text-align: center'>What is your main language?</p>","labelType":"html"}},{"v":"q-c732aa9e-4a03-4669-8afc-d301524e267d","value":{"label":"<p style='width=100%; text-align: center'>q-c732aa9e-4a03-4669-8afc-d301524e267d</p><p style='width=100%; text-align: center'>What is your ethnic group? Choose one option that best describes your ethnic group or background</p>","labelType":"html"}},{"v":"q-dcebba86-9a03-4e2c-8b7e-c7025de919ff","value":{"label":"<p style='width=100%; text-align: center'>q-dcebba86-9a03-4e2c-8b7e-c7025de919ff</p><p style='width=100%; text-align: center'>What is your marital status?</p>","labelType":"html"}},{"v":"q-105e3228-de5d-4835-acd8-5432e6664159","value":{"label":"<p style='width=100%; text-align: center'>q-105e3228-de5d-4835-acd8-5432e6664159</p><p style='width=100%; text-align: center'>What type of accommodation do you live in?</p>","labelType":"html"}},{"v":"q-5c7f25ee-da0b-4747-84c4-4f02aa97b7dc","value":{"label":"<p style='width=100%; text-align: center'>q-5c7f25ee-da0b-4747-84c4-4f02aa97b7dc</p><p style='width=100%; text-align: center'>Do you own or rent the accommodation that you live in?</p>","labelType":"html"}},{"v":"q-83c3b21f-f2ef-4233-945d-fba04bc7b061","value":{"label":"<p style='width=100%; text-align: center'>q-83c3b21f-f2ef-4233-945d-fba04bc7b061</p><p style='width=100%; text-align: center'>Do you have any of the following in your home?</p>","labelType":"html"}},{"v":"q-22158979-0d46-4fcb-8c6f-c93772867615","value":{"label":"<p style='width=100%; text-align: center'>q-22158979-0d46-4fcb-8c6f-c93772867615</p><p style='width=100%; text-align: center'>How is your home mainly heated?</p>","labelType":"html"}},{"v":"q-f402bcbb-c8d1-4a50-972e-05a1b55805f5","value":{"label":"<p style='width=100%; text-align: center'>q-f402bcbb-c8d1-4a50-972e-05a1b55805f5</p><p style='width=100%; text-align: center'>How many years have you lived at your current address?</p>","labelType":"html"}},{"v":"q-f0c3255b-e8cc-4f07-abc9-8ac754455158","value":{"label":"<p style='width=100%; text-align: center'>q-f0c3255b-e8cc-4f07-abc9-8ac754455158</p><p style='width=100%; text-align: center'>Including yourself, how many people are living together in your household?</p>","labelType":"html"}},{"v":"q-969822c0-2a9f-45a8-b598-7a6c0fb6cebf","value":{"label":"<p style='width=100%; text-align: center'>q-969822c0-2a9f-45a8-b598-7a6c0fb6cebf</p><p style='width=100%; text-align: center'>How many cars or vans are owned, or available for use, by you or members of your household?</p>","labelType":"html"}},{"v":"q-4932bcd0-8da8-44f8-affc-58b2e607608f","value":{"label":"<p style='width=100%; text-align: center'>q-4932bcd0-8da8-44f8-affc-58b2e607608f</p><p style='width=100%; text-align: center'>How are the other people who live with you related to you?</p>","labelType":"html"}}],"edges":[{"v":"q-33274eb3-0e5c-4101-b2ff-723025d4bb4e","w":"q-f9762470-c5d2-4d5c-aee5-72d9ef7099ea","value":{}},{"v":"q-f9762470-c5d2-4d5c-aee5-72d9ef7099ea","w":"q-d9d112f4-577a-4acc-a9cc-62e6fb507516","value":{}},{"v":"q-d9d112f4-577a-4acc-a9cc-62e6fb507516","w":"q-7cb272fa-ebd3-4b51-b700-9fa791934008","value":{}},{"v":"q-7cb272fa-ebd3-4b51-b700-9fa791934008","w":"q-337d0852-2674-4432-a2d6-109939b54e26","value":{}},{"v":"q-337d0852-2674-4432-a2d6-109939b54e26","w":"q-623ececf-ab0d-4d93-8b8a-463671926292","value":{}},{"v":"q-623ececf-ab0d-4d93-8b8a-463671926292","w":"q-c732aa9e-4a03-4669-8afc-d301524e267d","value":{}},{"v":"q-c732aa9e-4a03-4669-8afc-d301524e267d","w":"q-dcebba86-9a03-4e2c-8b7e-c7025de919ff","value":{}},{"v":"q-dcebba86-9a03-4e2c-8b7e-c7025de919ff","w":"q-105e3228-de5d-4835-acd8-5432e6664159","value":{}},{"v":"q-105e3228-de5d-4835-acd8-5432e6664159","w":"q-5c7f25ee-da0b-4747-84c4-4f02aa97b7dc","value":{}},{"v":"q-105e3228-de5d-4835-acd8-5432e6664159","w":"q-83c3b21f-f2ef-4233-945d-fba04bc7b061","value":{}},{"v":"q-5c7f25ee-da0b-4747-84c4-4f02aa97b7dc","w":"q-83c3b21f-f2ef-4233-945d-fba04bc7b061","value":{}},{"v":"q-83c3b21f-f2ef-4233-945d-fba04bc7b061","w":"q-22158979-0d46-4fcb-8c6f-c93772867615","value":{}},{"v":"q-22158979-0d46-4fcb-8c6f-c93772867615","w":"q-f402bcbb-c8d1-4a50-972e-05a1b55805f5","value":{}},{"v":"q-f402bcbb-c8d1-4a50-972e-05a1b55805f5","w":"q-f0c3255b-e8cc-4f07-abc9-8ac754455158","value":{}},{"v":"q-f0c3255b-e8cc-4f07-abc9-8ac754455158","w":"q-969822c0-2a9f-45a8-b598-7a6c0fb6cebf","value":{}},{"v":"q-f0c3255b-e8cc-4f07-abc9-8ac754455158","w":"q-4932bcd0-8da8-44f8-affc-58b2e607608f","value":{}},{"v":"q-4932bcd0-8da8-44f8-affc-58b2e607608f","w":"q-969822c0-2a9f-45a8-b598-7a6c0fb6cebf","value":{}},{"v":"q-969822c0-2a9f-45a8-b598-7a6c0fb6cebf","w":"END","value":{}}],"value":{}}`;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/dagre-d3v4@0.5.0/dist/dagre-d3v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.0/d3.min.js" charset="utf-8"></script>
+    <script src="./public/graph.js"></script>
+</html>

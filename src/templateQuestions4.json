@@ -1,0 +1,873 @@
+{
+  "title": "4. Family health history",
+  "questions": [
+    {
+      "questionId": "q-2409592f-975d-48cd-afad-f06ece823672",
+      "questionSourceId": "D2",
+      "questionSourceCoding": "modified ONS",
+      "question": "Where were you born?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "England",
+          "value": "1",
+          "nextQuestionIdGoTo": "q-13ddbc5a-7bdc-433b-acde-e260b8c9668d"
+        },
+        {
+          "answer": "Wales",
+          "value": "2",
+          "nextQuestionIdGoTo": "q-13ddbc5a-7bdc-433b-acde-e260b8c9668d"
+        },
+        {
+          "answer": "Scotland",
+          "value": "3",
+          "nextQuestionIdGoTo": "q-13ddbc5a-7bdc-433b-acde-e260b8c9668d"
+        },
+        {
+          "answer": "Northern Ireland",
+          "value": "4",
+          "nextQuestionIdGoTo": "q-13ddbc5a-7bdc-433b-acde-e260b8c9668d"
+        },
+        {
+          "answer": "UK (don't know country)",
+          "value": "5",
+          "nextQuestionIdGoTo": "q-13ddbc5a-7bdc-433b-acde-e260b8c9668d"
+        },
+        {
+          "answer": "Republic of Ireland",
+          "value": "6"
+        },
+        {
+          "answer": "India",
+          "value": "7"
+        },
+        {
+          "answer": "Pakistan",
+          "value": "8"
+        },
+        {
+          "answer": "Poland",
+          "value": "9"
+        },
+        {
+          "answer": "Elsewhere",
+          "value": "10"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1",
+          "nextQuestionIdGoTo": "q-13ddbc5a-7bdc-433b-acde-e260b8c9668d"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3",
+          "nextQuestionIdGoTo": "q-13ddbc5a-7bdc-433b-acde-e260b8c9668d"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-7a1aaa10-cdae-4c58-bf16-a5ae7c265434",
+      "questionSourceId": "D2A",
+      "questionSourceCoding": "UKB",
+      "help": "Please give the year that you FIRST came to live in the United Kingdom. [NEWPARAGRAPH]Do not count years if you came to holiday or visit friends or family. ",
+      "question": "What year did you first come to live in the United Kingdom?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter year",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "calculatedMinimumValue": "yearOfBirth",
+              "calculatedMaximumValue": "currentYear",
+              "invalidMessage": "Enter number between your year of birth and current year"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-13ddbc5a-7bdc-433b-acde-e260b8c9668d",
+      "questionSourceId": "Y1",
+      "questionSourceCoding": "UKB",
+      "question": "Were you adopted as a child?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "Yes",
+          "value": "1"
+        },
+        {
+          "answer": "No",
+          "value": "0"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-96d2c35a-1484-45d9-bbc5-8247881f5550",
+      "questionSourceId": "Y13",
+      "questionSourceCoding": "UKB",
+      "question": "Is your biological father still alive?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "Yes",
+          "value": "1",
+          "nextQuestionIdGoTo": "q-3515884e-487a-459b-8e1e-180a8ba804ed"
+        },
+        {
+          "answer": "No",
+          "value": "0",
+          "nextQuestionIdGoTo": "q-3c81a6fd-5e1d-49ae-aac1-45b493aad480"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1",
+          "nextQuestionIdGoTo": "q-a0572953-14f2-4ffe-9326-8c0f7f60d2b4"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3",
+          "nextQuestionIdGoTo": "q-a0572953-14f2-4ffe-9326-8c0f7f60d2b4"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-3515884e-487a-459b-8e1e-180a8ba804ed",
+      "questionSourceId": "Y13A",
+      "questionSourceCoding": "UKB",
+      "question": "What is his age now?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter his age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "max": 122,
+              "calculatedMinimumValue": "age",
+              "invalidMessage": "Enter number between your age and 122"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ],
+          "nextQuestionIdGoTo": "q-a0572953-14f2-4ffe-9326-8c0f7f60d2b4"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1",
+          "nextQuestionIdGoTo": "q-a0572953-14f2-4ffe-9326-8c0f7f60d2b4"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3",
+          "nextQuestionIdGoTo": "q-a0572953-14f2-4ffe-9326-8c0f7f60d2b4"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-3c81a6fd-5e1d-49ae-aac1-45b493aad480",
+      "questionSourceId": "Y13B",
+      "questionSourceCoding": "UKB",
+      "question": "What was his age when he died?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 10 and 122",
+              "min": 10,
+              "max": 122
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-a0572953-14f2-4ffe-9326-8c0f7f60d2b4",
+      "questionSourceId": "Y13D",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer.",
+      "help": "Answer this question for blood relations only. [NEWPARAGRAPH]If you are not sure if your father suffered from any of the listed illnesses, please select 'Do not know'. [NEWPARAGRAPH]If you know your father suffered from certain listed illnesses but are unsure about others, only select the ones you are sure about. ",
+      "question": "Has/did your biological father ever suffer from?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "answer": "Heart disease",
+          "value": "1"
+        },
+        {
+          "answer": "Stroke",
+          "value": "2"
+        },
+        {
+          "answer": "High blood pressure",
+          "value": "8"
+        },
+        {
+          "answer": "Diabetes",
+          "value": "9"
+        },
+        {
+          "answer": "Chronic bronchitis/emphysema",
+          "value": "6"
+        },
+        {
+          "answer": "Alzheimer's disease/dementia",
+          "value": "10"
+        },
+        {
+          "answer": "Pancreatitis",
+          "value": "14"
+        },
+        {
+          "answer": "Hip fracture",
+          "value": "15"
+        },
+        {
+          "answer": "None of the above  ",
+          "value": "-7",
+          "exclusive": true
+        },
+        {
+          "answer": "Do not know  ",
+          "value": "-1",
+          "exclusive": true
+        },
+        {
+          "answer": "Prefer not to answer  ",
+          "value": "-3",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-436c30a9-a8a2-4865-9f2c-9f805de8483d",
+      "questionSourceId": "Y13E",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer.",
+      "help": "Answer this question for blood relations only. [NEWPARAGRAPH]If you are not sure if your father suffered from any of the listed illnesses, please select 'Do not know'. [NEWPARAGRAPH]If you know your father suffered from certain listed illnesses but are unsure about others, only select the ones you are sure about. ",
+      "question": "Has/did your biological father ever suffer from?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "answer": "Parkinson's disease",
+          "value": "11"
+        },
+        {
+          "answer": "Severe depression",
+          "value": "12"
+        },
+        {
+          "answer": "Lung cancer",
+          "value": "3"
+        },
+        {
+          "answer": "Bowel cancer",
+          "value": "4"
+        },
+        {
+          "answer": "Prostate cancer",
+          "value": "13"
+        },
+        {
+          "answer": "Gastric cancer",
+          "value": "16"
+        },
+        {
+          "answer": "Oesophageal cancer",
+          "value": "17"
+        },
+        {
+          "answer": "None of the above  ",
+          "value": "-7",
+          "exclusive": true
+        },
+        {
+          "answer": "Do not know  ",
+          "value": "-1",
+          "exclusive": true
+        },
+        {
+          "answer": "Prefer not to answer  ",
+          "value": "-3",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-b1d5def4-1d6e-4a4e-82cd-a237fdd3a013",
+      "questionSourceId": "Y16",
+      "questionSourceCoding": "UKB",
+      "question": "Is your biological mother still alive?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "Yes",
+          "value": "1",
+          "nextQuestionIdGoTo": "q-61cf0de8-da2f-4a6d-abe8-677be15c94cd"
+        },
+        {
+          "answer": "No",
+          "value": "0",
+          "nextQuestionIdGoTo": "q-b54180fd-3039-4335-b4f7-a71de49711f2"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1",
+          "nextQuestionIdGoTo": "q-0f98d338-4a3c-4801-be03-840798684782"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3",
+          "nextQuestionIdGoTo": "q-0f98d338-4a3c-4801-be03-840798684782"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-61cf0de8-da2f-4a6d-abe8-677be15c94cd",
+      "questionSourceId": "Y16A",
+      "questionSourceCoding": "UKB",
+      "question": "What is her age now?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter her age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "max": 122,
+              "calculatedMinimumValue": "age",
+              "invalidMessage": "Enter number between your age and 122"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ],
+          "nextQuestionIdGoTo": "q-0f98d338-4a3c-4801-be03-840798684782"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1",
+          "nextQuestionIdGoTo": "q-0f98d338-4a3c-4801-be03-840798684782"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3",
+          "nextQuestionIdGoTo": "q-0f98d338-4a3c-4801-be03-840798684782"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-b54180fd-3039-4335-b4f7-a71de49711f2",
+      "questionSourceId": "Y16B",
+      "questionSourceCoding": "UKB",
+      "question": "What was her age when she died?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 10 and 122",
+              "min": 10,
+              "max": 122
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-0f98d338-4a3c-4801-be03-840798684782",
+      "questionSourceId": "Y16D",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer.",
+      "help": "Answer this question for blood relations only. [NEWPARAGRAPH]If you are not sure if your mother suffered from any of the listed illnesses, please select 'Do not know'. [NEWPARAGRAPH]If you know your mother suffered from certain listed illnesses but are unsure about others, only select the ones you are sure about.",
+      "question": "Has/did your biological mother ever suffer from?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "answer": "Heart disease",
+          "value": "1"
+        },
+        {
+          "answer": "Stroke",
+          "value": "2"
+        },
+        {
+          "answer": "High blood pressure",
+          "value": "8"
+        },
+        {
+          "answer": "Diabetes",
+          "value": "9"
+        },
+        {
+          "answer": "Chronic bronchitis/emphysema",
+          "value": "6"
+        },
+        {
+          "answer": "Alzheimer's disease/dementia",
+          "value": "10"
+        },
+        {
+          "answer": "Pancreatitis",
+          "value": "14"
+        },
+        {
+          "answer": "Hip fracture",
+          "value": "15"
+        },
+        {
+          "answer": "None of the above  ",
+          "value": "-7",
+          "exclusive": true
+        },
+        {
+          "answer": "Do not know  ",
+          "value": "-1",
+          "exclusive": true
+        },
+        {
+          "answer": "Prefer not to answer  ",
+          "value": "-3",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-08c0a67b-55cd-44be-b93e-3d51e69c1d1a",
+      "questionSourceId": "Y16E",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer.",
+      "help": "Answer this question for blood relations only. [NEWPARAGRAPH]If you are not sure if your mother suffered from any of the listed illnesses, please select 'Do not know'. [NEWPARAGRAPH]If you know your mother suffered from certain listed illnesses but are unsure about others, only select the ones you are sure about.",
+      "question": "Has/did your biological mother ever suffer from?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "answer": "Parkinson's disease",
+          "value": "11"
+        },
+        {
+          "answer": "Severe depression",
+          "value": "12"
+        },
+        {
+          "answer": "Lung cancer",
+          "value": "3"
+        },
+        {
+          "answer": "Bowel cancer",
+          "value": "4"
+        },
+        {
+          "answer": "Breast cancer",
+          "value": "5"
+        },
+        {
+          "answer": "Ovarian cancer",
+          "value": "18"
+        },
+        {
+          "answer": "Gastric cancer",
+          "value": "16"
+        },
+        {
+          "answer": "Oesophageal cancer",
+          "value": "17"
+        },
+        {
+          "answer": "None of the above  ",
+          "value": "-7",
+          "exclusive": true
+        },
+        {
+          "answer": "Do not know  ",
+          "value": "-1",
+          "exclusive": true
+        },
+        {
+          "answer": "Prefer not to answer  ",
+          "value": "-3",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-a1e8bbdc-145f-4c07-af06-59f2159aadf9",
+      "questionSourceId": "Y17",
+      "questionSourceCoding": "UKB",
+      "hint": "Please include those who have died, and twin brothers. Do not include halfbrothers, step-brothers or adopted brothers.",
+      "question": "How many brothers do you have?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of brothers",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 25",
+              "min": 0,
+              "max": 25
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-f856f1ab-289e-4b7f-a66f-b8634a9024c6",
+      "questionSourceId": "Y18",
+      "questionSourceCoding": "UKB",
+      "hint": "Please include those who have died, and twin sisters. Do not include half-sisters, step-sisters or adopted sisters.",
+      "question": "How many sisters do you have?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of sisters",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 25",
+              "min": 0,
+              "max": 25
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-f8dfdb12-6d33-44c2-92a1-c714c5a22128",
+      "questionSourceId": "Y19",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer.",
+      "help": "Answer this question for blood relations only. [NEWPARAGRAPH]Include any sisters or brothers who have died. If you are not sure if your sisters or brothers suffered from any of the listed illnesses, please select 'Do not know'. [NEWPARAGRAPH]If more than one sister or brother has suffered from any of the listed illnesses, you only need to select the illness once. ",
+      "question": "Have any of your brothers or sisters suffered from any of the following illnesses?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "answer": "Heart disease",
+          "value": "1"
+        },
+        {
+          "answer": "Stroke",
+          "value": "2"
+        },
+        {
+          "answer": "High blood pressure",
+          "value": "8"
+        },
+        {
+          "answer": "Diabetes",
+          "value": "9"
+        },
+        {
+          "answer": "Chronic bronchitis/emphysema",
+          "value": "6"
+        },
+        {
+          "answer": "Alzheimer's disease/dementia",
+          "value": "10"
+        },
+        {
+          "answer": "Pancreatitis",
+          "value": "14"
+        },
+        {
+          "answer": "Hip fracture",
+          "value": "15"
+        },
+        {
+          "answer": "None of the above  ",
+          "value": "-7",
+          "exclusive": true
+        },
+        {
+          "answer": "Do not know  ",
+          "value": "-1",
+          "exclusive": true
+        },
+        {
+          "answer": "Prefer not to answer  ",
+          "value": "-3",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-38bf8bb8-45d8-422f-a5bd-fa4e77292074",
+      "questionSourceId": "Y20",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer.",
+      "help": "Answer this question for blood relations only. [NEWPARAGRAPH]Include any sisters or brothers who have died. If you are not sure if your sisters or brothers suffered from any of the listed illnesses, please select 'Do not know'. [NEWPARAGRAPH]If more than one sister or brother has suffered from any of the listed illnesses, you only need to select the illness once. ",
+      "question": "Have any or your brothers or sisters suffered from any of the following illnesses?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "answer": "Parkinson's disease",
+          "value": "11"
+        },
+        {
+          "answer": "Severe depression",
+          "value": "12"
+        },
+        {
+          "answer": "Prostate cancer",
+          "value": "13"
+        },
+        {
+          "answer": "Lung cancer",
+          "value": "3"
+        },
+        {
+          "answer": "Bowel cancer",
+          "value": "4"
+        },
+        {
+          "answer": "Breast cancer",
+          "value": "5"
+        },
+        {
+          "answer": "Ovarian cancer",
+          "value": "18"
+        },
+        {
+          "answer": "Gastric cancer",
+          "value": "16"
+        },
+        {
+          "answer": "Oesophageal cancer",
+          "value": "17"
+        },
+        {
+          "answer": "None of the above  ",
+          "value": "-7",
+          "exclusive": true
+        },
+        {
+          "answer": "Do not know  ",
+          "value": "-1",
+          "exclusive": true
+        },
+        {
+          "answer": "Prefer not to answer  ",
+          "value": "-3",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    }
+  ]
+}

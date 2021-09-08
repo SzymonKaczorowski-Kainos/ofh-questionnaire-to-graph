@@ -1,0 +1,607 @@
+{
+  "title": "2. Work and education",
+  "questions": [
+    {
+      "questionId": "q-1a37f6df-f17a-4401-a837-d47e37737215",
+      "questionSourceId": "D10",
+      "questionSourceCoding": "UKB",
+      "question": "What is the average total income before tax received by your HOUSEHOLD?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "Less than £18,000",
+          "value": "1"
+        },
+        {
+          "answer": "£18,000 to £30,999",
+          "value": "2"
+        },
+        {
+          "answer": "£31,000 to £51,999",
+          "value": "3"
+        },
+        {
+          "answer": "£52,000 to £100,000",
+          "value": "4"
+        },
+        {
+          "answer": "Greater than £100,000",
+          "value": "5"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "The value is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-8ed95ac4-c2a3-447f-91c9-3a25105d596c",
+      "questionSourceId": "D9",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer.",
+      "help": "If more than one situation applies, select all that are appropriate.",
+      "question": "Which of the following describes your current situation?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "answer": "In paid employment or self-employed",
+          "value": "1"
+        },
+        {
+          "answer": "Retired",
+          "value": "2"
+        },
+        {
+          "answer": "Looking after home and/or family",
+          "value": "3"
+        },
+        {
+          "answer": "Unable to work because of sickness or disability",
+          "value": "4"
+        },
+        {
+          "answer": "On paid leave (furlough)",
+          "value": "8"
+        },
+        {
+          "answer": "Doing unpaid or voluntary work",
+          "value": "6"
+        },
+        {
+          "answer": "Full or part-time student",
+          "value": "7"
+        },
+        {
+          "answer": "Unemployed",
+          "value": "5",
+          "exclusive": true
+        },
+        {
+          "answer": "None of the above",
+          "value": "-7",
+          "exclusive": true
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-b9d865a8-30de-4bbf-b92b-77ce7a38e4dd",
+      "questionSourceId": "D9AA",
+      "questionSourceCoding": "UKB",
+      "hint": "If you have more than one job please answer this, and the following questions on work, for your MAIN job only.",
+      "help": "If you have more than one 'current job' then answer this question for your MAIN job only (ie: the job that you spend most of your time doing). [NEWPARAGRAPH]If you have been with the same employer, but have changed jobs whilst you have worked for them, then only give the number of years that you have been in your current job (not the number of years that you have been employed by the same company).[NEWPARAGRAPH]For instance, if you have worked as mail-room sorter but then been promoted to manager of the mail-room, please give the number of years you have worked as the mail-room manager only. [NEWPARAGRAPH]If you have changed employers, but have had the same job, please give the total number of years that you have worked in [NEWLINE]that job. For instance, if you have worked as a cleaner for 3 different companies, please give the total number of years working as a cleaner. ",
+      "question": "How many years have you worked in your current job?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of years",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Years",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 1 and your age",
+              "min": 1,
+              "calculatedMaximumValue": "age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "answer": "Less than a year",
+          "value": "-10"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-d1d93c6d-4034-438e-a3d6-7c971d3fe02a",
+      "questionSourceId": "D9A",
+      "questionSourceCoding": "UKB",
+      "hint": "Do not include hours travelling to and from work.",
+      "help": "If you have more than one 'current job' then answer this question for your MAIN job only.",
+      "question": "In a typical WEEK, how many hours do you spend at work?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of hours",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Hours",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 168",
+              "min": 0,
+              "max": 168
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-75fa8217-4791-4123-acd6-cc225ef3285e",
+      "questionSourceId": "D9G",
+      "questionSourceCoding": "UKB",
+      "hint": "Count outward journeys only, put 0 if you always work from home.",
+      "help": "If the number of times varies each week, take an average over the last 4 weeks. [NEWPARAGRAPH]If you only work from home please enter 0.",
+      "question": "How many times a WEEK do you travel from home to your main work?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of travels",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Journeys",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 999",
+              "min": 0,
+              "max": 999
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "answer": "Less than once a week",
+          "value": "-10"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-a6b4e73d-1390-4c67-8a13-3d774b4024d9",
+      "questionSourceId": "D9E",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer.",
+      "help": "If you have more than one 'current job' then answer this question for your MAIN job only.[NEWPARAGRAPH]If you use more than one form of transport then select all that apply.",
+      "question": "What types of transport do you use to get to and from work?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "answer": "Car/motor vehicle",
+          "value": "1"
+        },
+        {
+          "answer": "Walk",
+          "value": "2"
+        },
+        {
+          "answer": "Public transport",
+          "value": "3"
+        },
+        {
+          "answer": "Cycle",
+          "value": "4"
+        },
+        {
+          "answer": "None of the above",
+          "value": "-7",
+          "exclusive": true
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-bc39fbfc-fb82-4d94-8577-9ed4fe6d7ca1",
+      "questionSourceId": "D9F",
+      "questionSourceCoding": "UKB",
+      "help": "If you have more than one 'current job' then answer this question for your MAIN job only. [NEWPARAGRAPH]If you are unsure, please provide an estimate or select 'Do not know'. [NEWPARAGRAPH]If you only work from home please enter 0.",
+      "question": "About how many miles is it between your home and your work?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of miles",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Miles",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 9999",
+              "min": 0,
+              "max": 9999
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "answer": "Less than one mile",
+          "value": "-10"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "The value is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-387e7034-2010-4846-8230-79e9bf1f9df4",
+      "questionSourceId": "D9B",
+      "questionSourceCoding": "UKB",
+      "help": "If you have more than one 'current job' then answer this question your MAIN job only.",
+      "question": "Does your work involve walking or standing for most of the time?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "Never/rarely",
+          "value": "1"
+        },
+        {
+          "answer": "Sometimes",
+          "value": "2"
+        },
+        {
+          "answer": "Usually",
+          "value": "3"
+        },
+        {
+          "answer": "Always",
+          "value": "4"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "The value is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-5e0310a2-9810-43d8-ba48-ae14723f0745",
+      "questionSourceId": "D9C",
+      "questionSourceCoding": "UKB",
+      "help": "If you have more than one 'current job' then answer this question for your MAIN job only. [NEWPARAGRAPH]Physical work includes work that involves handling of heavy objects and use of heavy tools. ",
+      "question": "Does your work involve heavy manual or physical work?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "Never/rarely",
+          "value": "1"
+        },
+        {
+          "answer": "Sometimes",
+          "value": "2"
+        },
+        {
+          "answer": "Usually",
+          "value": "3"
+        },
+        {
+          "answer": "Always",
+          "value": "4"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "The value is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-2b7b56ee-ced6-463a-bea6-22139139f78d",
+      "questionSourceId": "D9D",
+      "questionSourceCoding": "UKB",
+      "help": "If you have more than one 'current job' then answer this question for your MAIN job only. [NEWPARAGRAPH]Shift work is a work schedule that falls outside of the normal daytime working hours of 9am-5pm. [NEWPARAGRAPH]This may involve working afternoons, evenings or nights or rotating through these kinds of shifts. ",
+      "question": "Does your work involve shift work?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "Never/rarely",
+          "value": "1",
+          "nextQuestionIdGoTo": "q-f4c323a8-8057-4a2e-81b4-aeb8f6e8352f"
+        },
+        {
+          "answer": "Sometimes",
+          "value": "2"
+        },
+        {
+          "answer": "Usually",
+          "value": "3"
+        },
+        {
+          "answer": "Always",
+          "value": "4"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "The value is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-758ed519-0b56-485a-84c5-ddbac7dfc237",
+      "questionSourceId": "D9DA",
+      "questionSourceCoding": "UKB",
+      "help": "If you have more than one 'current job' then answer this question for your MAIN job only. [NEWPARAGRAPH]Night shifts are a work schedule that involves working through the normal sleeping hours, for instance working through the hours from 12am to 6am. ",
+      "question": "Does your work involve night shifts?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "Never/rarely",
+          "value": "1"
+        },
+        {
+          "answer": "Sometimes",
+          "value": "2"
+        },
+        {
+          "answer": "Usually",
+          "value": "3"
+        },
+        {
+          "answer": "Always",
+          "value": "4"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "The value is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-f4c323a8-8057-4a2e-81b4-aeb8f6e8352f",
+      "questionSourceId": "D12",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one.",
+      "help": "A levels/AS levels and equivalent [NEWLINE]includes the Higher School Certificate [NEWPARAGRAPH]O levels/GCSEs and equivalent includes the School Certificate. [NEWPARAGRAPH]If your education was in another country please choose the category(ies) that best fits with your educational qualifications.",
+      "question": "Which of the following qualifications do you have?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "answer": "College or University degree",
+          "value": "1"
+        },
+        {
+          "answer": "A levels/AS levels or equivalent",
+          "value": "2"
+        },
+        {
+          "answer": "O levels/GCSEs or equivalent",
+          "value": "3"
+        },
+        {
+          "answer": "CSEs or equivalent",
+          "value": "4"
+        },
+        {
+          "answer": "NVQ or HND or HNC or equivalent",
+          "value": "5"
+        },
+        {
+          "answer": "Other professional qualifications eg: nursing, teaching",
+          "value": "6"
+        },
+        {
+          "answer": "None of the above",
+          "value": "-7",
+          "exclusive": true
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-7624a913-7332-4585-ad25-78dc9e4f109b",
+      "questionSourceId": "D11",
+      "questionSourceCoding": "UKB",
+      "help": "Please give the age that you completed 'continuous' full time education.[NEWLINE]For example, if you stopped your studies when you were 17 years old with the intention that you had completed your studies but then returned to full time studies when you were 24, enter 17. [NEWPARAGRAPH]However if you only temporarily stopped your studies at 17 with the intention that you would return to studies (for instance a gap year) and then completed your full time education at 21, enter 21. ",
+      "question": "At what age did you complete your continuous full time education?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of years",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 5 and your age",
+              "min": 5,
+              "calculatedMaximumValue": "age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "answer": "Still in full time education",
+          "value": "0"
+        },
+        {
+          "answer": "Never went to school",
+          "value": "-2"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "The value is required"
+        }
+      ]
+    }
+  ]
+}

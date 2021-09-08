@@ -1,0 +1,2684 @@
+{
+  "title": "5. Your health history",
+  "questions": [
+    {
+      "questionId": "q-441dd55c-d351-4bc2-87c4-69b418952cff",
+      "questionSourceId": "H3",
+      "questionSourceCoding": "UKB",
+      "question": "In general how would you rate your overall health?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Excellent"
+        },
+        {
+          "value": "2",
+          "answer": "Good"
+        },
+        {
+          "value": "3",
+          "answer": "Fair"
+        },
+        {
+          "value": "4",
+          "answer": "Poor"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-ee96cf2f-ae0a-4d05-a2d4-bbd0b5fb7103",
+      "questionSourceId": "H4",
+      "questionSourceCoding": "UKB",
+      "question": "Do you have any long-standing illness, disability or infirmity?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-c2e87ea4-9e7f-484d-92dc-eab029531fc6",
+      "questionSourceId": "H4A",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "help": "Only select a response if you personally receive the benefit. [NEWLINE]Do not include if your spouse or someone in your household receives one of these benefits. ",
+      "question": "Do you receive any of the following?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Attendance allowance"
+        },
+        {
+          "value": "2",
+          "answer": "Personal independence payment (previously disability living allowance)"
+        },
+        {
+          "value": "3",
+          "answer": "Blue badge"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-5ba7f30a-523f-4bf7-9e4f-7d38df7ca393",
+      "questionSourceId": "H4B",
+      "questionSourceCoding": "UKB",
+      "question": "Do you use private healthcare?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes, all of the time"
+        },
+        {
+          "value": "2",
+          "answer": "Yes, most of the time"
+        },
+        {
+          "value": "3",
+          "answer": "Yes, sometimes"
+        },
+        {
+          "value": "4",
+          "answer": "No, never"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-bd0e8785-cb55-4b8e-acea-aac1c0e656e0",
+      "questionSourceId": "COVID",
+      "questionSourceCoding": "WT Q",
+      "question": "Do you think that you have or have had COVID-19?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes, confirmed by a positive test"
+        },
+        {
+          "value": "2",
+          "answer": "Yes, suspected by a doctor but not tested"
+        },
+        {
+          "value": "3",
+          "answer": "Yes, my own suspicious"
+        },
+        {
+          "value": "4",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-d13f7af1-12da-40c7-88f3-689b41619479",
+      "questionSourceId": "Y6AB",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "Do you wear sun protection (e.g.  sunscreen lotion, hat) when you spend time outdoors in the summer?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Never/rarely"
+        },
+        {
+          "value": "2",
+          "answer": "Sometimes"
+        },
+        {
+          "value": "3",
+          "answer": "Most of the time"
+        },
+        {
+          "value": "4",
+          "answer": "Always"
+        },
+        {
+          "value": "5",
+          "answer": "Do not go out in sunshine"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-33424f65-2238-452b-a45e-1ae95e69378f",
+      "questionSourceId": "Y6AC",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "How many times a year would you use a solarium or sunlamp?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            },
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 9999",
+              "min": 0,
+              "max": 9999
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less than once a year"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-8494dda5-a58c-4076-a544-d053926987a9",
+      "questionSourceId": "H7C",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "help": "Answer this question thinking about the past year.",
+      "question": "Do you have any of the following?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Mouth ulcers"
+        },
+        {
+          "value": "2",
+          "answer": "Painful gums"
+        },
+        {
+          "value": "3",
+          "answer": "Bleeding gums"
+        },
+        {
+          "value": "4",
+          "answer": "Loose teeth"
+        },
+        {
+          "value": "5",
+          "answer": "Toothache"
+        },
+        {
+          "value": "6",
+          "answer": "Dentures"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-022d06bc-dbe0-40ec-91f3-f9d3ed680c5c",
+      "questionSourceId": "H8",
+      "questionSourceCoding": "UKB",
+      "question": "In the last year have you had any falls?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "No falls"
+        },
+        {
+          "value": "2",
+          "answer": "Only one fall"
+        },
+        {
+          "value": "3",
+          "answer": "More than one fall"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-7124fcb6-8676-4f38-8452-fb061703fdc4",
+      "questionSourceId": "H9",
+      "questionSourceCoding": "UKB",
+      "question": "Compared with one year ago, has your weight changed?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "0",
+          "answer": "No - weigh about the same"
+        },
+        {
+          "value": "2",
+          "answer": "Yes - gained weight"
+        },
+        {
+          "value": "3",
+          "answer": "Yes - lost weight"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-f45403fd-378b-4711-b094-a7a77cf44fcd",
+      "questionSourceId": "SY2",
+      "questionSourceCoding": "UKB",
+      "question": "In the last year have you ever had wheeze or whistling in the chest?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-8681c046-71a2-4937-9111-d177183d9464",
+      "questionSourceId": "SY3",
+      "questionSourceCoding": "UKB",
+      "question": "Do you get short of breath walking with people of your own age on level ground?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-ee0cea5a-123d-4472-880c-a13c8b57d8ec",
+      "questionSourceId": "SY4",
+      "questionSourceCoding": "UKB",
+      "question": "Do you get a pain in either leg on walking?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-4ac8b955-d4ca-49a2-9464-7ebe5cc8f95d",
+      "questionSourceId": "SY4I",
+      "questionSourceCoding": "UKB",
+      "question": "Have you ever had surgery to remove any of the following?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "1",
+          "answer": "Yes, toes"
+        },
+        {
+          "value": "2",
+          "answer": "Yes, leg below the knee"
+        },
+        {
+          "value": "3",
+          "answer": "Yes, leg above the knee"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-a1521404-e4fc-43f4-bfb6-6a450c6e321c",
+      "questionSourceId": "SY5",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "question": "In the last month have you experienced any of the following that interfered with your usual activities?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Headache"
+        },
+        {
+          "value": "2",
+          "answer": "Facial pain"
+        },
+        {
+          "value": "3",
+          "answer": "Neck or shoulder pain"
+        },
+        {
+          "value": "4",
+          "answer": "Back pain"
+        },
+        {
+          "value": "5",
+          "answer": "Stomach or abdominal pain"
+        },
+        {
+          "value": "6",
+          "answer": "Hip pain"
+        },
+        {
+          "value": "7",
+          "answer": "Knee pain"
+        },
+        {
+          "value": "8",
+          "answer": "Pain all over the body",
+          "exclusive": true
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-08070380-6d48-442c-9e30-8cdc2db6da20",
+      "questionSourceId": "SY5B1",
+      "questionSourceCoding": "UKB",
+      "question": "Have you had headaches for more than 3 months?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-7cf0518d-b8f5-40e6-9bb1-78e2ee46af30",
+      "questionSourceId": "SY5B2",
+      "questionSourceCoding": "UKB",
+      "question": "Have you had facial pains for more than 3 months?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-16442249-ef32-404f-8114-cf6ab8cf37d5",
+      "questionSourceId": "SY5B3",
+      "questionSourceCoding": "UKB",
+      "question": "Have you had neck or shoulder pains for more than 3 months?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-bd6d5b96-9b79-4fab-b677-42fe6f2844a0",
+      "questionSourceId": "SY5B4",
+      "questionSourceCoding": "UKB",
+      "question": "Have you had back pains for more than 3 months?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-70458cc1-b2bf-4ae9-8685-7a63f3e93cfd",
+      "questionSourceId": "SY5B5",
+      "questionSourceCoding": "UKB",
+      "question": "Have you had stomach or abdominal pains for more than 3 months?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-e389ede7-6172-4758-a2bc-21d322ade394",
+      "questionSourceId": "SY5B6",
+      "questionSourceCoding": "UKB",
+      "question": "Have you had hip pains for more than 3 months?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-9107e547-5048-4c2a-870f-210ea14c52d4",
+      "questionSourceId": "SY5B7",
+      "questionSourceCoding": "UKB",
+      "question": "Have you had knee pains for more than 3 months?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-1b703248-6e84-434a-b764-0c7fa29d2840",
+      "questionSourceId": "SY5B8",
+      "questionSourceCoding": "UKB",
+      "question": "Have you had pains all over the body for more than 3 months?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-1606ab21-37e7-4c76-998c-258e0af1d31a",
+      "questionSourceId": "SY1",
+      "questionSourceCoding": "UKB",
+      "question": "Do you ever have any pain or discomfort in your chest?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-a5d12b50-5e9f-42bc-becb-c0c476c2551a"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "nextQuestionIdGoTo": "q-a5d12b50-5e9f-42bc-becb-c0c476c2551a"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-a5d12b50-5e9f-42bc-becb-c0c476c2551a"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-92d639a3-4c2d-473f-9c08-af82556f8137",
+      "questionSourceId": "SY1A",
+      "questionSourceCoding": "UKB",
+      "question": "Do you get this pain or discomfort when you walk at an ordinary pace on the level?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes",
+          "nextQuestionIdGoTo": "q-6a1e0fb1-46c3-42b3-8944-c93e5e1c80c9"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Unable to walk on the level",
+          "nextQuestionIdGoTo": "q-a5d12b50-5e9f-42bc-becb-c0c476c2551a"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-a5d12b50-5e9f-42bc-becb-c0c476c2551a"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-cd823ba4-0828-42b0-80ed-45edc911819a",
+      "questionSourceId": "SY1B",
+      "questionSourceCoding": "UKB",
+      "question": "Do you get this pain or discomfort when you walk uphill or hurry?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-a5d12b50-5e9f-42bc-becb-c0c476c2551a"
+        },
+        {
+          "value": "-1",
+          "answer": "Unable to walk up hills or to hurry",
+          "nextQuestionIdGoTo": "q-a5d12b50-5e9f-42bc-becb-c0c476c2551a"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-a5d12b50-5e9f-42bc-becb-c0c476c2551a"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-6a1e0fb1-46c3-42b3-8944-c93e5e1c80c9",
+      "questionSourceId": "SY1C",
+      "questionSourceCoding": "UKB",
+      "question": "Does this chest pain go away when you stand still?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-a5d12b50-5e9f-42bc-becb-c0c476c2551a",
+      "questionSourceId": "H10",
+      "questionSourceCoding": "UKB",
+      "help": "Screening tests for bowel or colorectal cancer include: [NEWPARAGRAPH]- FOBT (faecal occult blood test) - this is when you are given a set of cards and asked to smear a part of your stool on three separate occasions onto the cards and then return the cards to be tested for blood. [NEWPARAGRAPH]- Sigmoidoscopy - a tube is used to examine the lower bowel. This is usually done in a doctor's office without pain relief. [NEWPARAGRAPH]- Colonoscopy - a long tube is used the examine the whole large bowel; you would usually have to drink a large amount of special liquid to prepare the bowel, and you would be given a sedative medication for the procedure. ",
+      "question": "Have you ever had a screening test for bowel (colorectal) cancer?  (Please include tests for blood in the stool/faeces or a colonoscopy or a sigmoidoscopy)",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-9ce7f2c6-0bc9-4685-a231-faa3170c8632",
+      "questionSourceId": "H10A",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "How many years ago was the most recent one of these tests?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of years",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Years ago",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 0,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 0 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less than 1 year ago"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-1204dab4-511e-49d0-b8f6-b635ea313cfd",
+      "questionSourceId": "MH2",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, select 'Do not know'.",
+      "question": "Have you ever had a blood test for prostate cancer (prostate specific antigen or PSA test)?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-0a06152b-e531-4ec5-8113-31142724c45e"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "nextQuestionIdGoTo": "q-0a06152b-e531-4ec5-8113-31142724c45e"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-0a06152b-e531-4ec5-8113-31142724c45e"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-eb29413e-bd14-4de4-ad5f-4ce34f8b2eeb",
+      "questionSourceId": "MH3",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, please provide an estimate or select Do not know.",
+      "question": "How many years ago was your last test?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of years",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Years ago",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 0,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 0 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less than 1 year ago"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-0a06152b-e531-4ec5-8113-31142724c45e",
+      "questionSourceId": "MH7",
+      "questionSourceCoding": "UKB",
+      "question": "How many children have you fathered?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 200",
+              "min": 0,
+              "max": 200
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-ba2e4897-9419-4901-99e1-86ef0b727fbf",
+      "questionSourceId": "FH3C",
+      "questionSourceCoding": "UKB MM",
+      "question": "How old were you when you had your FIRST child?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 8,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 8 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-4",
+          "answer": "Do not remember"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-5ff4c32e-388f-48b6-afa1-c27e55313134",
+      "questionSourceId": "FH3D",
+      "questionSourceCoding": "UKB MM",
+      "question": "How old were you when you had your LAST child?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 8,
+              "questionIdWithMinimumValue":"q-ba2e4897-9419-4901-99e1-86ef0b727fbf",
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between {0} and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ],
+          "nextQuestionIdGoTo":"q-976bae4f-bc5f-4182-a7d5-4b1538118282"
+        },
+        {
+          "value": "-4",
+          "answer": "Do not remember",
+          "nextQuestionIdGoTo":"q-976bae4f-bc5f-4182-a7d5-4b1538118282"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo":"q-976bae4f-bc5f-4182-a7d5-4b1538118282"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-e762ca11-d611-4daa-ad8a-1761844e542d",
+      "questionSourceId": "FH7",
+      "questionSourceCoding": "UKB",
+      "question": "Have you ever been for breast cancer screening (a mammogram)?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-5d3dc5e5-8b81-4f8c-be8b-b365ca4dccab"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "nextQuestionIdGoTo": "q-5d3dc5e5-8b81-4f8c-be8b-b365ca4dccab"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-5d3dc5e5-8b81-4f8c-be8b-b365ca4dccab"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-5b6a6581-26f5-4afc-85db-61fb229518a7",
+      "questionSourceId": "FH7A",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "How many years ago was your last screen?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of years",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Years ago",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 0,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 0 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less than 1 year ago"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-5d3dc5e5-8b81-4f8c-be8b-b365ca4dccab",
+      "questionSourceId": "FH8",
+      "questionSourceCoding": "UKB",
+      "question": "Have you ever had a cervical smear test?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-b059fd4d-b7eb-46e1-8c08-8beeff9b9ffe"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "nextQuestionIdGoTo": "q-b059fd4d-b7eb-46e1-8c08-8beeff9b9ffe"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-b059fd4d-b7eb-46e1-8c08-8beeff9b9ffe"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-96ba0e68-2c46-494b-93a3-b439e67697a5",
+      "questionSourceId": "FH8B",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "How many years ago was your last cervical smear test?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of years",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Years ago",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 0,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 0 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-10",
+          "answer": "Less than 1 year ago"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-b059fd4d-b7eb-46e1-8c08-8beeff9b9ffe",
+      "questionSourceId": "FH1",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "How old were you when your periods started?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 5,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 5 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-4994ff22-b17c-412e-a81e-d87a39beac0a",
+      "questionSourceId": "FH2",
+      "questionSourceCoding": "UKB",
+      "question": "Have you had your menopause (periods stopped)?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        },
+        {
+          "value": "2",
+          "answer": "Not sure - had a hysterectomy"
+        },
+        {
+          "value": "3",
+          "answer": "Not sure - other reason"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-4155fe93-b03d-416e-b269-7693a7005213",
+      "questionSourceId": "FH2A",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "How old were you when your periods stopped?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "questionIdWithMinimumValue": "q-b059fd4d-b7eb-46e1-8c08-8beeff9b9ffe",
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between {0} and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-9418fce7-e615-4bf5-9481-9b41f7267983",
+      "questionSourceId": "FH2B",
+      "questionSourceCoding": "UKB",
+      "help": "Please count from the first day of your last menstrual period",
+      "question": "How many days since your last menstrual period?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of days",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Days ago",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 365",
+              "min": 0,
+              "max": 365
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-bbe2b2bb-6c39-4cbf-869d-decefc20fcfb",
+      "questionSourceId": "FH2C",
+      "questionSourceCoding": "UKB",
+      "hint": "The number of days between each menstrual period",
+      "question": "How many days is your usual menstrual cycle?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of days",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Days",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 7 and 365",
+              "min": 7,
+              "max": 365
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-6",
+          "answer": "Irregular cycle"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-de29fd3a-ab01-4554-a22b-4a1b88563c32",
+      "questionSourceId": "FH3",
+      "questionSourceCoding": "UKB",
+      "question": "How many children have you given birth to?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 0 and 25",
+              "min": 0,
+              "max": 25
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-4ba5298d-bbc5-4a99-8b16-be18f6ec0d2d",
+      "questionSourceId": "FH3C",
+      "questionSourceCoding": "UKB",
+      "question": "How old were you when you had your FIRST child?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 8,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 8 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-4",
+          "answer": "Do not remember"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-029e1fd4-450c-4f8b-8e93-1f12977ca9fd",
+      "questionSourceId": "FH3D",
+      "questionSourceCoding": "UKB",
+      "question": "How old were you when you had your LAST child?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 8,
+              "questionIdWithMinimumValue":"q-4ba5298d-bbc5-4a99-8b16-be18f6ec0d2d",
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between {0} and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-4",
+          "answer": "Do not remember"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-0cb2be39-9fcc-455c-99be-c3671d07d79b",
+      "questionSourceId": "FH5",
+      "questionSourceCoding": "UKB",
+      "hint": "Include the 'mini-pill'",
+      "question": "Have you ever taken the contraceptive pill?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-fad84886-716f-4c55-b577-b00ba3482cc4"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "nextQuestionIdGoTo": "q-fad84886-716f-4c55-b577-b00ba3482cc4"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-fad84886-716f-4c55-b577-b00ba3482cc4"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-62331283-c9d8-415d-90a0-ccf5d3994f5c",
+      "questionSourceId": "FH5A",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "About how old were you when you first went on the contraceptive pill?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 5,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 5 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-d41dcff6-ae21-4570-a828-faae8ada5660",
+      "questionSourceId": "FH5B",
+      "questionSourceCoding": "UKB",
+      "help": "If you are currently taking the pill, select 'Still taking the pill'.[NEWPARAGRAPH]If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "How old were you when you last used the contraceptive pill?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 5,
+              "questionIdWithMinimumValue":"q-62331283-c9d8-415d-90a0-ccf5d3994f5c",
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between {0} and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        },
+        {
+          "value": "-11",
+          "answer": "Still taking the pill"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-fad84886-716f-4c55-b577-b00ba3482cc4",
+      "questionSourceId": "FH6",
+      "questionSourceCoding": "UKB",
+      "question": "Have you ever used hormone replacement therapy (HRT)?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-a5f6b367-15a9-4485-b751-53d7d0c2852a"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "nextQuestionIdGoTo": "q-a5f6b367-15a9-4485-b751-53d7d0c2852a"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-a5f6b367-15a9-4485-b751-53d7d0c2852a"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-a6c38608-2d85-4136-afcd-dd6edea4a202",
+      "questionSourceId": "FH6A",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'.",
+      "question": "How old were you when you first used HRT?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 16,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 16 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        },
+        {
+          "value": "-11",
+          "answer": "Still taking HRT"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-82bad9de-6e65-4379-8464-882d0e268d54",
+      "questionSourceId": "FH6B",
+      "questionSourceCoding": "UKB",
+      "help": "If you are currently using HRT, select 'Still taking HRT'. [NEWPARAGRAPH]If you are unsure, please provide an estimate or select 'Do not know'. ",
+      "question": "How old were you when you last used HRT?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 16,
+              "questionIdWithMinimumValue":"q-a6c38608-2d85-4136-afcd-dd6edea4a202",
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between {0} and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        },
+        {
+          "value": "-11",
+          "answer": "Still taking HRT"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-a5f6b367-15a9-4485-b751-53d7d0c2852a",
+      "questionSourceId": "FH9",
+      "questionSourceCoding": "UKB",
+      "question": "Have you had a hysterectomy (womb removed)?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-7233fcdb-f981-4a9c-9444-33bc172a02b3"
+        },
+        {
+          "value": "-5",
+          "answer": "Not sure",
+          "nextQuestionIdGoTo": "q-7233fcdb-f981-4a9c-9444-33bc172a02b3"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-7233fcdb-f981-4a9c-9444-33bc172a02b3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-9c5a13c3-a797-4987-ab8e-55a245a04157",
+      "questionSourceId": "FH9A",
+      "questionSourceCoding": "UKB",
+      "help": "If you are unsure, please provide an estimate or select 'Do not know'",
+      "question": "How old were you when you had your hysterectomy?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 0,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 0 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-7233fcdb-f981-4a9c-9444-33bc172a02b3",
+      "questionSourceId": "FH10",
+      "questionSourceCoding": "UKB",
+      "help": "Only enter 'Yes' if you have had both ovaries removed. [NEWPARAGRAPH]If you are unsure of whether both ovaries have been removed, select 'Do not know'. ",
+      "question": "Have you had BOTH ovaries removed?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "nextQuestionIdGoTo": "q-019f4cea-245c-43f4-b0f5-bcb00b1fc8b2"
+        },
+        {
+          "value": "-5",
+          "answer": "Not sure",
+          "nextQuestionIdGoTo": "q-019f4cea-245c-43f4-b0f5-bcb00b1fc8b2"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "nextQuestionIdGoTo": "q-019f4cea-245c-43f4-b0f5-bcb00b1fc8b2"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-69696deb-ab4c-464a-9c8f-4f28234ea88f",
+      "questionSourceId": "FH10A",
+      "questionSourceCoding": "UKB",
+      "question": "How old were you when you had BOTH ovaries removed?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter age",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 0,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 0 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-019f4cea-245c-43f4-b0f5-bcb00b1fc8b2",
+      "questionSourceId": "L1",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "question": "Has a doctor ever told you that you have had any of the following condition?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Heart attack"
+        },
+        {
+          "value": "2",
+          "answer": "Angina"
+        },
+        {
+          "value": "3",
+          "answer": "Stroke"
+        },
+        {
+          "value": "4",
+          "answer": "High blood pressure"
+        },
+        {
+          "value": "5",
+          "answer": "Cancer"
+        },
+        {
+          "value": "6",
+          "answer": "Diabetes"
+        },
+        {
+          "value": "7",
+          "answer": "Lung Disease"
+        },
+        {
+          "value": "8",
+          "answer": "Other"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-976bae4f-bc5f-4182-a7d5-4b1538118282",
+      "questionSourceId": "L5DF",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "help": "If you are not sure if you take any of the types of medications, enter 'Do not know'.",
+      "question": "Do you regularly take any of the following medications?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Cholesterol lowering medication"
+        },
+        {
+          "value": "2",
+          "answer": "Blood pressure medication"
+        },
+        {
+          "value": "3",
+          "answer": "Insulin"
+        },
+        {
+          "value": "4",
+          "answer": "Hormone replacement therapy"
+        },
+        {
+          "value": "5",
+          "answer": "Oral contraceptive pill or minipill"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-e0d8c949-0793-48ee-933f-8ec9fbfb4c7f",
+      "questionSourceId": "L6",
+      "questionSourceCoding": "UKB",
+      "hint": "Do not forget medications such as puffers or patches",
+      "question": "Do you regularly take any other PRESCRIPTION medications?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "2",
+          "answer": "Glucocorticoids or steroids"
+        },
+        {
+          "value": "3",
+          "answer": "Atypical antipsychotics"
+        },
+        {
+          "value": "4",
+          "answer": "Other"
+        },
+        {
+          "value": "0",
+          "answer": "No",
+          "exclusive": true
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-5c207356-597a-4105-8443-566abec1f95e",
+      "questionSourceId": "L6C",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "help": "Some over the counter medicines are known by other names. Please enter [NEWLINE]the corresponding name if you take any of the following REGULARLY [NEWLINE](that is, most days of the week for the last 4 weeks): [NEWPARAGRAPH]Aspirin: Alka Rapid Crystals, Alka-[NEWLINE]Seltzer XS, Anadin Extra, Anadin [NEWLINE]Original, Askit powders, Aspro Clear, [NEWLINE]Codis 500, Disprin, Disprin Extra [NEWPARAGRAPH]Ibuprofen: Anadin Ultra, Anadin [NEWLINE]Ibuprofen, Cuprofen Plus, Nurofen, [NEWLINE]Solpaflex, Ibuleve [NEWPARAGRAPH]Paracetamol: Anadin Extra, Hedex [NEWLINE]Extra, Panadol, Paracodol, Paramol, [NEWLINE]Solpadeine, Syndol, Veganin, Feminax, [NEWLINE]Midrid, Migraleve [NEWPARAGRAPH]Codeine: Codis 500, Cuprofen Plus, [NEWLINE]Nurofen Plus, Panadol Ultra, [NEWLINE]Paracodol, Paramol, Solpadeine Max, [NEWLINE]Sopadeine Plus, Solpafelx, Syndol, [NEWLINE]Veganin, Feminax, Migraleve",
+      "question": "Do you regularly take any of the following?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Aspirin"
+        },
+        {
+          "value": "2",
+          "answer": "Ibuprofen (e.g. Nurofen)"
+        },
+        {
+          "value": "3",
+          "answer": "Paracetamol"
+        },
+        {
+          "value": "4",
+          "answer": "Ranitidine (e.g. Zantac)"
+        },
+        {
+          "value": "5",
+          "answer": "Omeprazole (e.g. Zanprol)"
+        },
+        {
+          "value": "6",
+          "answer": "Laxatives (e.g. Dulcolax, Senokot)"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-d7974c40-2f5c-4044-826b-11d0885542cd",
+      "questionSourceId": "L7",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "question": "Do you regularly take any of the following?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Vitamin A"
+        },
+        {
+          "value": "2",
+          "answer": "Vitamin B"
+        },
+        {
+          "value": "3",
+          "answer": "Vitamin C"
+        },
+        {
+          "value": "4",
+          "answer": "Vitamin D"
+        },
+        {
+          "value": "5",
+          "answer": "Vitamin E"
+        },
+        {
+          "value": "6",
+          "answer": "Folic acid or Folate (Vit B9)"
+        },
+        {
+          "value": "7",
+          "answer": "Multivitamins +/- minerals"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-3888b351-a80f-4603-8c5c-3c45cdf74599",
+      "questionSourceId": "L7A",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "question": "Do you regularly take any of the following?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Fish oil (including cod liver oil)"
+        },
+        {
+          "value": "2",
+          "answer": "Glucosamine"
+        },
+        {
+          "value": "3",
+          "answer": "Calcium"
+        },
+        {
+          "value": "4",
+          "answer": "Zinc"
+        },
+        {
+          "value": "5",
+          "answer": "Iron"
+        },
+        {
+          "value": "6",
+          "answer": "Selenium"
+        },
+        {
+          "value": "-7",
+          "answer": "None of the above",
+          "exclusive": true
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-99385f80-faa4-4192-95bd-a87fcbde08ad",
+      "questionSourceId": "PHQ_Trig",
+      "questionSourceCoding": "OFH",
+      "question": "Do you want to skip PHQ and GAD questions?",
+      "templateType": "skip",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Yes",
+          "nextQuestionIdGoTo": "END"
+        },
+        {
+          "value": "0",
+          "answer": "No"
+        }
+      ]
+    },
+    {
+      "questionId": "q-add5b1c5-6ab2-4548-9fc1-4890f11cc88c",
+      "questionSourceId": "PHQ9",
+      "questionSourceCoding": "OFH",
+      "helpCustomTitle": "Further support for your mental health",
+      "help": "More on suicidal thoughts[NEWPARAGRAPH]If you have had thoughts of self-harming or are feeling suicidal contact someone immediately. [NEWPARAGRAPH]- See your GP or the out-of-hours GP service. If you have already taken an overdose or cut yourself badly, dial 999.[NEWPARAGRAPH]- There are helplines with specially trained volunteers who will listen to you, understand what you are going through, and help you through the immediate crisis.[NEWPARAGRAPH]- Contact a friend, family or someone you trust.[NEWPARAGRAPH]The Samaritans operate a service 24 hours a day, 365 days a year, for people who want to talk in confidence. Call 116123.",
+      "question": "Over the last two weeks, how often have you been bothered by any of the following problems?",
+      "templateType": "table",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Not at all"
+        },
+        {
+          "value": "2",
+          "answer": "Several days"
+        },
+        {
+          "value": "3",
+          "answer": "More than half the days"
+        },
+        {
+          "value": "4",
+          "answer": "Nearly every day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ],
+      "subQuestions": [
+        {
+          "questionId": "q-823231ff-6ee3-4d74-9875-f556c1caf8c7",
+          "questionSourceId": "PHQ9_1",
+          "questionSourceCoding": "OFH",
+          "question": "Little interest or pleasure in doing things"
+        },
+        {
+          "questionId": "q-12f24c6b-455b-4561-9c11-f15414800450",
+          "questionSourceId": "PHQ9_2",
+          "questionSourceCoding": "OFH",
+          "question": "Feeling down, depressed, or hopeless?"
+        },
+        {
+          "questionId": "q-74d61778-d70f-4131-a2e5-64968580211f",
+          "questionSourceId": "PHQ9_3",
+          "questionSourceCoding": "OFH",
+          "question": "Trouble falling or staying asleep, or sleeping too much?"
+        },
+        {
+          "questionId": "q-dc40c509-0a8f-4aff-b61b-bf4729c21f6a",
+          "questionSourceId": "PHQ9_4",
+          "questionSourceCoding": "OFH",
+          "question": "Feeling tired or having little energy?"
+        },
+        {
+          "questionId": "q-d8107f31-e427-439a-88da-86d076e9159b",
+          "questionSourceId": "PHQ9_5",
+          "questionSourceCoding": "OFH",
+          "question": "Poor appetite or overeating?"
+        },
+        {
+          "questionId": "q-9e617c47-96ea-4282-888e-c7d9e10d7a13",
+          "questionSourceId": "PHQ9_6",
+          "questionSourceCoding": "OFH",
+          "question": "Feeling bad about yourself – or that you are a failure or have let yourself or your family down?"
+        },
+        {
+          "questionId": "q-8c3fb165-45bd-41ae-8c1b-956a116e7971",
+          "questionSourceId": "PHQ9_7",
+          "questionSourceCoding": "OFH",
+          "question": "Trouble concentrating on things, such as reading the newspaper or watching television?"
+        },
+        {
+          "questionId": "q-bc6d2f0a-a1b0-46da-8bc9-b5fc0069903c",
+          "questionSourceId": "PHQ9_8",
+          "questionSourceCoding": "OFH",
+          "question": "Moving or speaking so slowly that other people could have noticed? Or the opposite – being so fidgety or restless that you have been moving around a lot more than usual?"
+        },
+        {
+          "questionId": "q-334a59f6-7ab0-4cc2-8ab6-6fe4a7bfca7f",
+          "questionSourceId": "PHQ9_9",
+          "questionSourceCoding": "OFH",
+          "question": "Thoughts that you would be better off dead or of hurting yourself in some way"
+        }
+      ]
+    },
+    {
+      "questionId": "q-f7ffedcb-a8f2-430d-b422-0433cb262a8a",
+      "questionSourceId": "GAD7",
+      "questionSourceCoding": "OFH",
+      "question": "Over the last two weeks, how often have you been bothered by any of the following problems?",
+      "templateType": "table",
+      "answers": [
+        {
+          "value": "1",
+          "answer": "Not at all"
+        },
+        {
+          "value": "2",
+          "answer": "Several days"
+        },
+        {
+          "value": "3",
+          "answer": "More than half the days"
+        },
+        {
+          "value": "4",
+          "answer": "Nearly every day"
+        },
+        {
+          "value": "-1",
+          "answer": "Do not know"
+        },
+        {
+          "value": "-3",
+          "answer": "Prefer not to answer"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ],
+      "subQuestions": [
+        {
+          "questionId": "q-9c476268-3ad9-40e8-a3c7-d6ef649a5824",
+          "questionSourceId": "GAD7_1",
+          "questionSourceCoding": "OFH",
+          "question": "Feeling nervous, anxious or on edge?"
+        },
+        {
+          "questionId": "q-4d4b1de6-8435-41b6-a600-820271109e7c",
+          "questionSourceId": "GAD7_2",
+          "questionSourceCoding": "OFH",
+          "question": "Not being able to stop or control worrying?"
+        },
+        {
+          "questionId": "q-e189ac00-2fcc-471e-9633-950a63145d4a",
+          "questionSourceId": "GAD7_3",
+          "questionSourceCoding": "OFH",
+          "question": "Worrying too much about different things?"
+        },
+        {
+          "questionId": "q-d116f485-6c8c-408d-89c6-b39503c53aa6",
+          "questionSourceId": "GAD7_4",
+          "questionSourceCoding": "OFH",
+          "question": "Trouble relaxing?"
+        },
+        {
+          "questionId": "q-d7f5d653-3a14-445a-9e6c-eb0409ba5872",
+          "questionSourceId": "GAD7_5",
+          "questionSourceCoding": "OFH",
+          "question": "Being so restless that it is hard to sit still?"
+        },
+        {
+          "questionId": "q-a062723d-46fa-4fbe-8a35-ccb642ae647e",
+          "questionSourceId": "GAD7_6",
+          "questionSourceCoding": "OFH",
+          "question": "Becoming easily annoyed or irritable?"
+        },
+        {
+          "questionId": "q-8f4bc1b9-550d-471f-b3ae-8c5797b8e3b1",
+          "questionSourceId": "GAD7_7",
+          "questionSourceCoding": "OFH",
+          "question": "Feeling afraid as if something awful might happen?"
+        }
+      ]
+    }
+  ]
+}

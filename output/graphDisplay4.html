@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        body {
+            font-family: sans-serif;
+            color: #444;
+        }
+        
+        .clusters rect {
+            fill: #00ffd0;
+            stroke: #999;
+            stroke-width: 1.5px;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf;
+            font-size: 14px;
+        }
+
+        .node rect {
+            stroke: #999;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Questionnaire Template graph generator</h1>
+    <svg id="svg-canvas"></svg>
+  </body>
+    <script>
+      const graphString = `{"options":{"directed":true,"multigraph":false,"compound":false},"nodes":[{"v":"END","value":{"label":"END"}},{"v":"q-2409592f-975d-48cd-afad-f06ece823672","value":{"label":"<p style='width=100%; text-align: center'>q-2409592f-975d-48cd-afad-f06ece823672</p><p style='width=100%; text-align: center'>Where were you born?</p>","labelType":"html"}},{"v":"q-7a1aaa10-cdae-4c58-bf16-a5ae7c265434","value":{"label":"<p style='width=100%; text-align: center'>q-7a1aaa10-cdae-4c58-bf16-a5ae7c265434</p><p style='width=100%; text-align: center'>What year did you first come to live in the United Kingdom?</p>","labelType":"html"}},{"v":"q-13ddbc5a-7bdc-433b-acde-e260b8c9668d","value":{"label":"<p style='width=100%; text-align: center'>q-13ddbc5a-7bdc-433b-acde-e260b8c9668d</p><p style='width=100%; text-align: center'>Were you adopted as a child?</p>","labelType":"html"}},{"v":"q-96d2c35a-1484-45d9-bbc5-8247881f5550","value":{"label":"<p style='width=100%; text-align: center'>q-96d2c35a-1484-45d9-bbc5-8247881f5550</p><p style='width=100%; text-align: center'>Is your biological father still alive?</p>","labelType":"html"}},{"v":"q-3515884e-487a-459b-8e1e-180a8ba804ed","value":{"label":"<p style='width=100%; text-align: center'>q-3515884e-487a-459b-8e1e-180a8ba804ed</p><p style='width=100%; text-align: center'>What is his age now?</p>","labelType":"html"}},{"v":"q-3c81a6fd-5e1d-49ae-aac1-45b493aad480","value":{"label":"<p style='width=100%; text-align: center'>q-3c81a6fd-5e1d-49ae-aac1-45b493aad480</p><p style='width=100%; text-align: center'>What was his age when he died?</p>","labelType":"html"}},{"v":"q-a0572953-14f2-4ffe-9326-8c0f7f60d2b4","value":{"label":"<p style='width=100%; text-align: center'>q-a0572953-14f2-4ffe-9326-8c0f7f60d2b4</p><p style='width=100%; text-align: center'>Has/did your biological father ever suffer from?</p>","labelType":"html"}},{"v":"q-436c30a9-a8a2-4865-9f2c-9f805de8483d","value":{"label":"<p style='width=100%; text-align: center'>q-436c30a9-a8a2-4865-9f2c-9f805de8483d</p><p style='width=100%; text-align: center'>Has/did your biological father ever suffer from?</p>","labelType":"html"}},{"v":"q-b1d5def4-1d6e-4a4e-82cd-a237fdd3a013","value":{"label":"<p style='width=100%; text-align: center'>q-b1d5def4-1d6e-4a4e-82cd-a237fdd3a013</p><p style='width=100%; text-align: center'>Is your biological mother still alive?</p>","labelType":"html"}},{"v":"q-61cf0de8-da2f-4a6d-abe8-677be15c94cd","value":{"label":"<p style='width=100%; text-align: center'>q-61cf0de8-da2f-4a6d-abe8-677be15c94cd</p><p style='width=100%; text-align: center'>What is her age now?</p>","labelType":"html"}},{"v":"q-b54180fd-3039-4335-b4f7-a71de49711f2","value":{"label":"<p style='width=100%; text-align: center'>q-b54180fd-3039-4335-b4f7-a71de49711f2</p><p style='width=100%; text-align: center'>What was her age when she died?</p>","labelType":"html"}},{"v":"q-0f98d338-4a3c-4801-be03-840798684782","value":{"label":"<p style='width=100%; text-align: center'>q-0f98d338-4a3c-4801-be03-840798684782</p><p style='width=100%; text-align: center'>Has/did your biological mother ever suffer from?</p>","labelType":"html"}},{"v":"q-08c0a67b-55cd-44be-b93e-3d51e69c1d1a","value":{"label":"<p style='width=100%; text-align: center'>q-08c0a67b-55cd-44be-b93e-3d51e69c1d1a</p><p style='width=100%; text-align: center'>Has/did your biological mother ever suffer from?</p>","labelType":"html"}},{"v":"q-a1e8bbdc-145f-4c07-af06-59f2159aadf9","value":{"label":"<p style='width=100%; text-align: center'>q-a1e8bbdc-145f-4c07-af06-59f2159aadf9</p><p style='width=100%; text-align: center'>How many brothers do you have?</p>","labelType":"html"}},{"v":"q-f856f1ab-289e-4b7f-a66f-b8634a9024c6","value":{"label":"<p style='width=100%; text-align: center'>q-f856f1ab-289e-4b7f-a66f-b8634a9024c6</p><p style='width=100%; text-align: center'>How many sisters do you have?</p>","labelType":"html"}},{"v":"q-f8dfdb12-6d33-44c2-92a1-c714c5a22128","value":{"label":"<p style='width=100%; text-align: center'>q-f8dfdb12-6d33-44c2-92a1-c714c5a22128</p><p style='width=100%; text-align: center'>Have any of your brothers or sisters suffered from any of the following illnesses?</p>","labelType":"html"}},{"v":"q-38bf8bb8-45d8-422f-a5bd-fa4e77292074","value":{"label":"<p style='width=100%; text-align: center'>q-38bf8bb8-45d8-422f-a5bd-fa4e77292074</p><p style='width=100%; text-align: center'>Have any or your brothers or sisters suffered from any of the following illnesses?</p>","labelType":"html"}}],"edges":[{"v":"q-2409592f-975d-48cd-afad-f06ece823672","w":"q-7a1aaa10-cdae-4c58-bf16-a5ae7c265434","value":{}},{"v":"q-2409592f-975d-48cd-afad-f06ece823672","w":"q-13ddbc5a-7bdc-433b-acde-e260b8c9668d","value":{}},{"v":"q-7a1aaa10-cdae-4c58-bf16-a5ae7c265434","w":"q-13ddbc5a-7bdc-433b-acde-e260b8c9668d","value":{}},{"v":"q-13ddbc5a-7bdc-433b-acde-e260b8c9668d","w":"q-96d2c35a-1484-45d9-bbc5-8247881f5550","value":{}},{"v":"q-96d2c35a-1484-45d9-bbc5-8247881f5550","w":"q-3515884e-487a-459b-8e1e-180a8ba804ed","value":{}},{"v":"q-96d2c35a-1484-45d9-bbc5-8247881f5550","w":"q-3c81a6fd-5e1d-49ae-aac1-45b493aad480","value":{}},{"v":"q-96d2c35a-1484-45d9-bbc5-8247881f5550","w":"q-a0572953-14f2-4ffe-9326-8c0f7f60d2b4","value":{}},{"v":"q-3515884e-487a-459b-8e1e-180a8ba804ed","w":"q-a0572953-14f2-4ffe-9326-8c0f7f60d2b4","value":{}},{"v":"q-3c81a6fd-5e1d-49ae-aac1-45b493aad480","w":"q-a0572953-14f2-4ffe-9326-8c0f7f60d2b4","value":{}},{"v":"q-a0572953-14f2-4ffe-9326-8c0f7f60d2b4","w":"q-436c30a9-a8a2-4865-9f2c-9f805de8483d","value":{}},{"v":"q-436c30a9-a8a2-4865-9f2c-9f805de8483d","w":"q-b1d5def4-1d6e-4a4e-82cd-a237fdd3a013","value":{}},{"v":"q-b1d5def4-1d6e-4a4e-82cd-a237fdd3a013","w":"q-61cf0de8-da2f-4a6d-abe8-677be15c94cd","value":{}},{"v":"q-b1d5def4-1d6e-4a4e-82cd-a237fdd3a013","w":"q-b54180fd-3039-4335-b4f7-a71de49711f2","value":{}},{"v":"q-b1d5def4-1d6e-4a4e-82cd-a237fdd3a013","w":"q-0f98d338-4a3c-4801-be03-840798684782","value":{}},{"v":"q-61cf0de8-da2f-4a6d-abe8-677be15c94cd","w":"q-0f98d338-4a3c-4801-be03-840798684782","value":{}},{"v":"q-b54180fd-3039-4335-b4f7-a71de49711f2","w":"q-0f98d338-4a3c-4801-be03-840798684782","value":{}},{"v":"q-0f98d338-4a3c-4801-be03-840798684782","w":"q-08c0a67b-55cd-44be-b93e-3d51e69c1d1a","value":{}},{"v":"q-08c0a67b-55cd-44be-b93e-3d51e69c1d1a","w":"q-a1e8bbdc-145f-4c07-af06-59f2159aadf9","value":{}},{"v":"q-a1e8bbdc-145f-4c07-af06-59f2159aadf9","w":"q-f856f1ab-289e-4b7f-a66f-b8634a9024c6","value":{}},{"v":"q-f856f1ab-289e-4b7f-a66f-b8634a9024c6","w":"q-f8dfdb12-6d33-44c2-92a1-c714c5a22128","value":{}},{"v":"q-f856f1ab-289e-4b7f-a66f-b8634a9024c6","w":"END","value":{}},{"v":"q-f8dfdb12-6d33-44c2-92a1-c714c5a22128","w":"q-38bf8bb8-45d8-422f-a5bd-fa4e77292074","value":{}},{"v":"q-38bf8bb8-45d8-422f-a5bd-fa4e77292074","w":"END","value":{}}],"value":{}}`;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/dagre-d3v4@0.5.0/dist/dagre-d3v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.0/d3.min.js" charset="utf-8"></script>
+    <script src="./public/graph.js"></script>
+</html>

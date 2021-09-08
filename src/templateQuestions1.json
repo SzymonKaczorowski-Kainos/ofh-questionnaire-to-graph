@@ -1,0 +1,761 @@
+{
+  "title": "1. About you and your household",
+  "questions": [
+    {
+      "questionId": "q-33274eb3-0e5c-4101-b2ff-723025d4bb4e",
+      "questionSourceId": "(Variable name) (MM)",
+      "questionSourceCoding": "SEX",
+      "question": "What sex was assigned to you at birth?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "Male",
+          "value": "1"
+        },
+        {
+          "answer": "Female",
+          "value": "2"
+        },
+        {
+          "answer": "Other",
+          "value": "3"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "4"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-f9762470-c5d2-4d5c-aee5-72d9ef7099ea",
+      "questionSourceId": "Alternative q",
+      "questionSourceCoding": "SEX",
+      "question": "To which gender identify do you most identify?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "Male",
+          "value": "1"
+        },
+        {
+          "answer": "Female",
+          "value": "2"
+        },
+        {
+          "answer": "Transgender Male",
+          "value": "3"
+        },
+        {
+          "answer": "Transgender Female",
+          "value": "4"
+        },
+        {
+          "answer": "Gender variant/non-conforming",
+          "value": "5"
+        },
+        {
+          "answer": "Other",
+          "value": "6"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "7"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-d9d112f4-577a-4acc-a9cc-62e6fb507516",
+      "questionSourceId": "Ht_Wt_M",
+      "questionSourceCoding": "STRIDES",
+      "question": "How would you prefer to enter your height and weight?",
+      "templateType": "multiQuestion",
+      "subQuestions": [
+        {
+          "questionId": "q-Height",
+          "question": "Height",
+          "templateType": "inlineRadio",
+          "answers": [
+            {
+              "answer": "Feet and inches",
+              "value": "1"
+            },
+            {
+              "answer": "Centimeters",
+              "value": "2"
+            }
+          ],
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "You must select your preferred unit of measure for giving us your height"
+            }
+          ]
+        },
+        {
+          "questionId": "q-Weight",
+          "question": "Weight",
+          "templateType": "inlineRadio",
+          "answers": [
+            {
+              "answer": "Stones and Pounds",
+              "value": "1"
+            },
+            {
+              "answer": "Kilograms",
+              "value": "2"
+            }
+          ],
+          "validators": [
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "You must select your preferred unit of measure for giving us your weight"
+            }
+          ]
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must select your preferred unit of measure for height and weight"
+        }
+      ],
+      "answerConverter": "HeightAndWeightQuestion"
+    },
+    {
+      "questionId": "q-7cb272fa-ebd3-4b51-b700-9fa791934008",
+      "questionSourceId": "Ht",
+      "questionSourceCoding": "STRIDES",
+      "hint": "without shoes",
+      "question": "What is your height?",
+      "templateType": "dynamicInlineNumber",
+      "answers": []
+    },
+    {
+      "questionId": "q-337d0852-2674-4432-a2d6-109939b54e26",
+      "questionSourceId": "Wt",
+      "questionSourceCoding": "STRIDES",
+      "hint": "without shoes/heavy clothing",
+      "question": "What is your weight?",
+      "templateType": "dynamicInlineNumber",
+      "answers": []
+    },
+    {
+      "questionId": "q-623ececf-ab0d-4d93-8b8a-463671926292",
+      "questionSourceId": "Language",
+      "questionSourceCoding": "PSE UK",
+      "question": "What is your main language?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "English",
+          "value": "1"
+        },
+        {
+          "answer": "Welsh ",
+          "value": "2"
+        },
+        {
+          "answer": "(Scottish) Gaelic",
+          "value": "3"
+        },
+        {
+          "answer": "Punjabi",
+          "value": "4"
+        },
+        {
+          "answer": "Gujarati",
+          "value": "5"
+        },
+        {
+          "answer": "Bengali",
+          "value": "6"
+        },
+        {
+          "answer": "Urdu",
+          "value": "7"
+        },
+        {
+          "answer": "Hindi",
+          "value": "8"
+        },
+        {
+          "answer": "Cantonese",
+          "value": "9"
+        },
+        {
+          "answer": "Mandarin",
+          "value": "10"
+        },
+        {
+          "answer": "Polish",
+          "value": "11"
+        },
+        {
+          "answer": "Arabic",
+          "value": "12"
+        },
+        {
+          "answer": "Other (INCLUDING BRITISH SIGN LANGUAGE)",
+          "value": "13"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "14"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-c732aa9e-4a03-4669-8afc-d301524e267d",
+      "questionSourceId": "ETHNICITY",
+      "questionSourceCoding": "PSE UK",
+      "question": "What is your ethnic group? Choose one option that best describes your ethnic group or background",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "White - English / Welsh / Scottish / Northern Irish / British",
+          "value": "1"
+        },
+        {
+          "answer": "White – Irish",
+          "value": "2"
+        },
+        {
+          "answer": "White - Gypsy or Irish Traveller",
+          "value": "3"
+        },
+        {
+          "answer": "White – Polish",
+          "value": "4"
+        },
+        {
+          "answer": "Any other white background",
+          "value": "5"
+        },
+        {
+          "answer": "Mixed - White and Black Caribbean",
+          "value": "6"
+        },
+        {
+          "answer": "Mixed - White and Black African",
+          "value": "7"
+        },
+        {
+          "answer": "Mixed - White and Asian",
+          "value": "8"
+        },
+        {
+          "answer": "Any other mixed multiple ethnic background",
+          "value": "9"
+        },
+        {
+          "answer": "Asian or Asian British – Indian",
+          "value": "10"
+        },
+        {
+          "answer": "Asian or Asian British – Pakistani",
+          "value": "11"
+        },
+        {
+          "answer": "Asian or Asian British – Bangladeshi",
+          "value": "12"
+        },
+        {
+          "answer": "Chinese",
+          "value": "13"
+        },
+        {
+          "answer": "Any other Asian/Asian British background",
+          "value": "14"
+        },
+        {
+          "answer": "Black or Black British – African",
+          "value": "15"
+        },
+        {
+          "answer": "Black or Black British – Caribbean",
+          "value": "16"
+        },
+        {
+          "answer": "Any other Black / African / Caribbean background",
+          "value": "17"
+        },
+        {
+          "answer": "Arab",
+          "value": "18"
+        },
+        {
+          "answer": "Other",
+          "value": "19"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "20"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-dcebba86-9a03-4e2c-8b7e-c7025de919ff",
+      "questionSourceId": "MaritalStatus",
+      "questionSourceCoding": "ONS",
+      "question": "What is your marital status?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "Single, that is never married",
+          "value": "1"
+        },
+        {
+          "answer": "Married and living with your husband/wife",
+          "value": "2"
+        },
+        {
+          "answer": "A Civil Partner in a legally-recognised Civil Partnership",
+          "value": "6"
+        },
+        {
+          "answer": "Married and separated from your husband/wife",
+          "value": "3"
+        },
+        {
+          "answer": "Divorced",
+          "value": "4"
+        },
+        {
+          "answer": "Widowed or widower",
+          "value": "5"
+        },
+        {
+          "answer": "Other",
+          "value": "7"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "9"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-105e3228-de5d-4835-acd8-5432e6664159",
+      "questionSourceId": "D4",
+      "questionSourceCoding": "UKB",
+      "help": "Please select: [NEWPARAGRAPH]-A house or bungalow for any whole, detached, semi-detached or terraced (including end-terrace) house or bungalow. [NEWPARAGRAPH]-A flat, maisonette, or apartment for any purpose-built block of flats or tenement, [NEWLINE]part of a converted or shared house (including bed-sits) or within a commercial building (for example in an office building, or hotel, or over a shop). [NEWPARAGRAPH]-If none of the options apply, select 'None of the above'.",
+      "question": "What type of accommodation do you live in?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "A house or bungalow",
+          "value": "1"
+        },
+        {
+          "answer": "A flat, maisonette or apartment",
+          "value": "2"
+        },
+        {
+          "answer": "Mobile or temporary structure (i.e. caravan)",
+          "value": "3"
+        },
+        {
+          "answer": "Sheltered accommodation",
+          "value": "4",
+          "nextQuestionIdGoTo": "q-83c3b21f-f2ef-4233-945d-fba04bc7b061"
+        },
+        {
+          "answer": "Care home ",
+          "value": "5",
+          "nextQuestionIdGoTo": "q-83c3b21f-f2ef-4233-945d-fba04bc7b061"
+        },
+        {
+          "answer": "None of the above",
+          "value": "-7"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-5c7f25ee-da0b-4747-84c4-4f02aa97b7dc",
+      "questionSourceId": "D5",
+      "questionSourceCoding": "UKB",
+      "help": "Please select: [NEWPARAGRAPH]- Own outright if you or someone in your household owns the accommodation that you live in. [NEWPARAGRAPH]- Own with mortgage if you or someone in your household has a mortgage on the accommodation that you live in.",
+      "question": "Do you own or rent the accommodation that you live in?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "Own outright (by you or someone in your household)",
+          "value": "1"
+        },
+        {
+          "answer": "Own with a mortgage",
+          "value": "2"
+        },
+        {
+          "answer": "Rent - from local authority, local council, housing association, student accomodation",
+          "value": "3"
+        },
+        {
+          "answer": "Rent - from private landlord or letting agency",
+          "value": "4"
+        },
+        {
+          "answer": "Pay part rent and part mortgage (shared ownership)",
+          "value": "5"
+        },
+        {
+          "answer": "Live in accommodation rent free",
+          "value": "6"
+        },
+        {
+          "answer": "None of the above",
+          "value": "-7"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-83c3b21f-f2ef-4233-945d-fba04bc7b061",
+      "questionSourceId": "D5A",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "help": "Solid fuel refers to wood or coal. Regular use is when you use this for most days of the week in the winter time.",
+      "question": "Do you have any of the following in your home?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "answer": "A gas hob or gas cooker",
+          "value": "1"
+        },
+        {
+          "answer": "A gas fire that you use regularly in winter time",
+          "value": "2"
+        },
+        {
+          "answer": "An open solid fuel fire that you use regularly in winter time",
+          "value": "3"
+        },
+        {
+          "answer": "None of the above",
+          "value": "-7",
+          "exclusive": true
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1",
+          "exclusive": true
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-22158979-0d46-4fcb-8c6f-c93772867615",
+      "questionSourceId": "D5A1",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "help": "Solid fuel refers to wood or coal. Regular use is when you use this for most days of the week in the winter time.",
+      "question": "How is your home mainly heated?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "answer": "Gas central heating",
+          "value": "1"
+        },
+        {
+          "answer": "Electric storage heaters",
+          "value": "2"
+        },
+        {
+          "answer": "Oil (kerosene) central heating",
+          "value": "3"
+        },
+        {
+          "answer": "Portable gas or paraffin heaters",
+          "value": "4"
+        },
+        {
+          "answer": "Solid fuel central heating",
+          "value": "5"
+        },
+        {
+          "answer": "Open fire without central heating",
+          "value": "6"
+        },
+        {
+          "answer": "None of the above",
+          "value": "-7",
+          "exclusive": true
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1",
+          "exclusive": true
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-f402bcbb-c8d1-4a50-972e-05a1b55805f5",
+      "questionSourceId": "D5B",
+      "questionSourceCoding": "UKB",
+      "help": "If you have lived there for less than one year select 'Less than a year'. [NEWPARAGRAPH]If you are unsure, please provide an estimate or select 'Do not know'. [NEWPARAGRAPH]If you have lived at your current address at different times, add up the total number of years you lived there. For instance, if you lived at your current address for 3 years, moved overseas for one year and returned to your current address for another 5 years, then you would enter 8 years.",
+      "question": "How many years have you lived at your current address?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter number of years",
+          "type": "number",
+          "value": "_inputvalue_",
+          "units": "Years",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "min": 1,
+              "calculatedMaximumValue": "age",
+              "invalidMessage": "Enter number between 1 and your age"
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "answer": "Less than a year",
+          "value": "-10"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-f0c3255b-e8cc-4f07-abc9-8ac754455158",
+      "questionSourceId": "D7",
+      "questionSourceCoding": "UKB",
+      "hint": "Include those who usually live in the house such as students living away from home during term, partners in the armed forces or professions such as pilots",
+      "help": "If you live alone, enter 1. [NEWPARAGRAPH]Include those who usually live in the house such as students living away from home during term, partners in the armed forces or professions such as pilots.",
+      "question": "Including yourself, how many people are living together in your household?",
+      "templateType": "radioAndInput",
+      "answers": [
+        {
+          "answer": "Enter the number of people",
+          "type": "number",
+          "value": "_inputvalue_",
+          "validators": [
+            {
+              "validatorType": "isInt",
+              "invalidMessage": "Enter number between 1 and 100",
+              "min": 1,
+              "max": 100
+            },
+            {
+              "validatorType": "notEmpty",
+              "invalidMessage": "Enter the value it is required"
+            }
+          ]
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    },
+    {
+      "questionId": "q-4932bcd0-8da8-44f8-affc-58b2e607608f",
+      "questionSourceId": "D7A",
+      "questionSourceCoding": "UKB",
+      "hint": "You can select more than one answer",
+      "help": "[NEWLINE]Answer this question considering all the people who you counted in the household in response to the previous question.",
+      "question": "How are the other people who live with you related to you?",
+      "templateType": "toggle",
+      "answers": [
+        {
+          "answer": "Husband, wife or partner",
+          "value": "1"
+        },
+        {
+          "answer": "Son and/or daughter (include step-children)",
+          "value": "2"
+        },
+        {
+          "answer": "Brother and/or sister",
+          "value": "3"
+        },
+        {
+          "answer": "Mother and/or father",
+          "value": "4"
+        },
+        {
+          "answer": "Grandparent",
+          "value": "5"
+        },
+        {
+          "answer": "Grandchild",
+          "value": "6"
+        },
+        {
+          "answer": "Other related",
+          "value": "7"
+        },
+        {
+          "answer": "Other unrelated",
+          "value": "8"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3",
+          "exclusive": true
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "You must tick one or more options from the list to continue"
+        },
+        {
+          "validatorType": "isExclusive",
+          "invalidMessage": "You cannot combine the options you have selected. Please check and try again"
+        }
+      ]
+    },
+    {
+      "questionId": "q-969822c0-2a9f-45a8-b598-7a6c0fb6cebf",
+      "questionSourceId": "D8",
+      "questionSourceCoding": "UKB",
+      "hint": "Please include company vehicles if available for private use",
+      "help": "Do not include motorcycles.",
+      "question": "How many cars or vans are owned, or available for use, by you or members of your household?",
+      "templateType": "radio",
+      "answers": [
+        {
+          "answer": "None",
+          "value": "1"
+        },
+        {
+          "answer": "One",
+          "value": "2"
+        },
+        {
+          "answer": "Two",
+          "value": "3"
+        },
+        {
+          "answer": "Three",
+          "value": "4"
+        },
+        {
+          "answer": "Four or more",
+          "value": "5"
+        },
+        {
+          "answer": "Do not know",
+          "value": "-1"
+        },
+        {
+          "answer": "Prefer not to answer",
+          "value": "-3"
+        }
+      ],
+      "validators": [
+        {
+          "validatorType": "notEmpty",
+          "invalidMessage": "Enter the value it is required"
+        }
+      ]
+    }
+  ]
+}

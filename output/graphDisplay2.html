@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        body {
+            font-family: sans-serif;
+            color: #444;
+        }
+        
+        .clusters rect {
+            fill: #00ffd0;
+            stroke: #999;
+            stroke-width: 1.5px;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf;
+            font-size: 14px;
+        }
+
+        .node rect {
+            stroke: #999;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Questionnaire Template graph generator</h1>
+    <svg id="svg-canvas"></svg>
+  </body>
+    <script>
+      const graphString = `{"options":{"directed":true,"multigraph":false,"compound":false},"nodes":[{"v":"END","value":{"label":"END"}},{"v":"q-1a37f6df-f17a-4401-a837-d47e37737215","value":{"label":"<p style='width=100%; text-align: center'>q-1a37f6df-f17a-4401-a837-d47e37737215</p><p style='width=100%; text-align: center'>What is the average total income before tax received by your HOUSEHOLD?</p>","labelType":"html"}},{"v":"q-8ed95ac4-c2a3-447f-91c9-3a25105d596c","value":{"label":"<p style='width=100%; text-align: center'>q-8ed95ac4-c2a3-447f-91c9-3a25105d596c</p><p style='width=100%; text-align: center'>Which of the following describes your current situation?</p>","labelType":"html"}},{"v":"q-f4c323a8-8057-4a2e-81b4-aeb8f6e8352f","value":{"label":"<p style='width=100%; text-align: center'>q-f4c323a8-8057-4a2e-81b4-aeb8f6e8352f</p><p style='width=100%; text-align: center'>Which of the following qualifications do you have?</p>","labelType":"html"}},{"v":"q-b9d865a8-30de-4bbf-b92b-77ce7a38e4dd","value":{"label":"<p style='width=100%; text-align: center'>q-b9d865a8-30de-4bbf-b92b-77ce7a38e4dd</p><p style='width=100%; text-align: center'>How many years have you worked in your current job?</p>","labelType":"html"}},{"v":"q-d1d93c6d-4034-438e-a3d6-7c971d3fe02a","value":{"label":"<p style='width=100%; text-align: center'>q-d1d93c6d-4034-438e-a3d6-7c971d3fe02a</p><p style='width=100%; text-align: center'>In a typical WEEK, how many hours do you spend at work?</p>","labelType":"html"}},{"v":"q-75fa8217-4791-4123-acd6-cc225ef3285e","value":{"label":"<p style='width=100%; text-align: center'>q-75fa8217-4791-4123-acd6-cc225ef3285e</p><p style='width=100%; text-align: center'>How many times a WEEK do you travel from home to your main work?</p>","labelType":"html"}},{"v":"q-a6b4e73d-1390-4c67-8a13-3d774b4024d9","value":{"label":"<p style='width=100%; text-align: center'>q-a6b4e73d-1390-4c67-8a13-3d774b4024d9</p><p style='width=100%; text-align: center'>What types of transport do you use to get to and from work?</p>","labelType":"html"}},{"v":"q-bc39fbfc-fb82-4d94-8577-9ed4fe6d7ca1","value":{"label":"<p style='width=100%; text-align: center'>q-bc39fbfc-fb82-4d94-8577-9ed4fe6d7ca1</p><p style='width=100%; text-align: center'>About how many miles is it between your home and your work?</p>","labelType":"html"}},{"v":"q-387e7034-2010-4846-8230-79e9bf1f9df4","value":{"label":"<p style='width=100%; text-align: center'>q-387e7034-2010-4846-8230-79e9bf1f9df4</p><p style='width=100%; text-align: center'>Does your work involve walking or standing for most of the time?</p>","labelType":"html"}},{"v":"q-5e0310a2-9810-43d8-ba48-ae14723f0745","value":{"label":"<p style='width=100%; text-align: center'>q-5e0310a2-9810-43d8-ba48-ae14723f0745</p><p style='width=100%; text-align: center'>Does your work involve heavy manual or physical work?</p>","labelType":"html"}},{"v":"q-2b7b56ee-ced6-463a-bea6-22139139f78d","value":{"label":"<p style='width=100%; text-align: center'>q-2b7b56ee-ced6-463a-bea6-22139139f78d</p><p style='width=100%; text-align: center'>Does your work involve shift work?</p>","labelType":"html"}},{"v":"q-758ed519-0b56-485a-84c5-ddbac7dfc237","value":{"label":"<p style='width=100%; text-align: center'>q-758ed519-0b56-485a-84c5-ddbac7dfc237</p><p style='width=100%; text-align: center'>Does your work involve night shifts?</p>","labelType":"html"}},{"v":"q-7624a913-7332-4585-ad25-78dc9e4f109b","value":{"label":"<p style='width=100%; text-align: center'>q-7624a913-7332-4585-ad25-78dc9e4f109b</p><p style='width=100%; text-align: center'>At what age did you complete your continuous full time education?</p>","labelType":"html"}}],"edges":[{"v":"q-1a37f6df-f17a-4401-a837-d47e37737215","w":"q-8ed95ac4-c2a3-447f-91c9-3a25105d596c","value":{}},{"v":"q-8ed95ac4-c2a3-447f-91c9-3a25105d596c","w":"q-f4c323a8-8057-4a2e-81b4-aeb8f6e8352f","value":{}},{"v":"q-8ed95ac4-c2a3-447f-91c9-3a25105d596c","w":"q-b9d865a8-30de-4bbf-b92b-77ce7a38e4dd","value":{}},{"v":"q-b9d865a8-30de-4bbf-b92b-77ce7a38e4dd","w":"q-d1d93c6d-4034-438e-a3d6-7c971d3fe02a","value":{}},{"v":"q-d1d93c6d-4034-438e-a3d6-7c971d3fe02a","w":"q-75fa8217-4791-4123-acd6-cc225ef3285e","value":{}},{"v":"q-75fa8217-4791-4123-acd6-cc225ef3285e","w":"q-a6b4e73d-1390-4c67-8a13-3d774b4024d9","value":{}},{"v":"q-a6b4e73d-1390-4c67-8a13-3d774b4024d9","w":"q-bc39fbfc-fb82-4d94-8577-9ed4fe6d7ca1","value":{}},{"v":"q-bc39fbfc-fb82-4d94-8577-9ed4fe6d7ca1","w":"q-387e7034-2010-4846-8230-79e9bf1f9df4","value":{}},{"v":"q-387e7034-2010-4846-8230-79e9bf1f9df4","w":"q-5e0310a2-9810-43d8-ba48-ae14723f0745","value":{}},{"v":"q-5e0310a2-9810-43d8-ba48-ae14723f0745","w":"q-2b7b56ee-ced6-463a-bea6-22139139f78d","value":{}},{"v":"q-2b7b56ee-ced6-463a-bea6-22139139f78d","w":"q-758ed519-0b56-485a-84c5-ddbac7dfc237","value":{}},{"v":"q-2b7b56ee-ced6-463a-bea6-22139139f78d","w":"q-f4c323a8-8057-4a2e-81b4-aeb8f6e8352f","value":{}},{"v":"q-758ed519-0b56-485a-84c5-ddbac7dfc237","w":"q-f4c323a8-8057-4a2e-81b4-aeb8f6e8352f","value":{}},{"v":"q-f4c323a8-8057-4a2e-81b4-aeb8f6e8352f","w":"q-7624a913-7332-4585-ad25-78dc9e4f109b","value":{}},{"v":"q-7624a913-7332-4585-ad25-78dc9e4f109b","w":"END","value":{}}],"value":{}}`;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/dagre-d3v4@0.5.0/dist/dagre-d3v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.0/d3.min.js" charset="utf-8"></script>
+    <script src="./public/graph.js"></script>
+</html>

@@ -1,0 +1,12 @@
+
+> questionnaire-to-graph@1.0.0 start /Users/szymonk/Desktop/Projects/EDDRP/playground/questionnaire-to-graph
+> ts-node --transpile-only src/index.ts;  cp -r ./public/ ./output/public
+
+[
+  [
+    'q-ee96cf2f-ae0a-4d05-a2d4-bbd0b5fb7103',
+    'q-c2e87ea4-9e7f-484d-92dc-eab029531fc6',
+    'q-5ba7f30a-523f-4bf7-9e4f-7d38df7ca393',
+    'q-ee96cf2f-ae0a-4d05-a2d4-bbd0b5fb7103'
+  ]
+]
